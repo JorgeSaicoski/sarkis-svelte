@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="" />
+    <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Sobre.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Sobre.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/docker-pm2-sveltekit" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +81,7 @@
       <updated>1675108291553</updated>
       <workItem from="1675108292609" duration="635000" />
       <workItem from="1675175868031" duration="14697000" />
-      <workItem from="1675261594463" duration="2122000" />
+      <workItem from="1675261594463" duration="3583000" />
     </task>
     <servers />
   </component>
