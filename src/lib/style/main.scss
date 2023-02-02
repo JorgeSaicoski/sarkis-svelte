@@ -11,23 +11,27 @@ nav{
   & .links{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     & div {
-      background-color: $white-color;
       border-radius: 15px;
-      width: 100px;
-      margin: 15px;
+      width: 150px;
+      height: 100%;
       display: flex;
       justify-content: center;
-      align-content: center;
-      &:hover{
-        background-color: $base-color;
-      }
+      align-items: center;
+      border-left: $white-color 2px solid;
       & a {
-        color: $font-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white-color;
         text-align: center;
         text-decoration: none;
         width: 100%;
         height: 100%;
+        font-size: 24px;
         padding: 10px;
       }
     }
