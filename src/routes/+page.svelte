@@ -3,32 +3,18 @@
     import Servicios from "$lib/components/Servicios.svelte";
     import Asociacion from "$lib/components/Asociacion.svelte";
     import Vantajas from "$lib/components/Vantajas.svelte";
-    import {tweened} from "svelte/motion";
+
+    let isOn=false;
+
 
     let y, sobreH, servicioH,vantajasH,asociacionH
 
-    const colors = [
-        'rgb(0,138,189)',
-        'rgb(0,31,94)',
-        'rgb(78,78,94)'
-    ];
-    let i = 0
-    const color = tweened(colors[i], {
-        duration: 800,
-    });
-    function scroll(e){
-        console.log(e.timeStamp)
-        if(e.timeStamp%55===0){
-            i===3?i=0:i++
-            color.set("rgb(78,78,94)")
-        }
-    }
+
 
 </script>
 
 <svelte:window bind:scrollY={y} on:scroll={scroll}></svelte:window>
 <section id="sobre"
-         style="background-color: {$color}"
          bind:clientHeight={sobreH}
 >
     {#if y<sobreH}
@@ -57,7 +43,5 @@
     {/if}
 </section>
 
-<style>
 
-</style>
 
