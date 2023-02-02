@@ -1,7 +1,8 @@
 @import 'variables';
+@import 'effects';
 
 nav, footer{
-  background-color: $dark-color;
+  background-color: $base-color;
   display: flex;
 }
 
@@ -52,11 +53,15 @@ nav{
   }
 }
 
+section{
+  min-height: 100vh;
+  transition: 2s;
+}
+
 body{
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $base-color;
 }
