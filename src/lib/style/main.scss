@@ -1,14 +1,26 @@
 @import 'variables';
+@import 'dark';
+@import 'sobre';
 @import 'effects';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
 
 nav, footer{
   display: flex;
-  background-color: $dark-color;
 }
+
 
 nav{
   flex-direction: row;
   justify-content: space-between;
+  padding: 20px;
+  & .buttones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   & .links{
     display: flex;
     flex-direction: row;
@@ -21,14 +33,12 @@ nav{
       display: flex;
       justify-content: center;
       align-items: center;
-      border-left: $base-color 2px solid;
       overflow: hidden;
       & a {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: $base-color;
         text-align: center;
         text-decoration: none;
         width: 100%;
@@ -51,6 +61,15 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    & .links{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: $media-small){
+    & .links{
+      width: 100%;
+      flex-direction: column;
+    }
   }
 }
 
@@ -61,36 +80,9 @@ section{
 
 body{
   margin: 0;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $base-color;
 }
 
-.title{
-  font-size: 34px;
-  text-align: center;
-  --s: 120px; /* control the size*/
 
-  --_g: radial-gradient(#0000 70%,#1a2030 71%);
-  background:
-          var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
-          conic-gradient($base-color 25%,$white-color 0 50%,$dark-color 0 75%,$dark-color 0);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-position-x: 0;
-  background-position-y: 0;
-  animation-name: titleEffect;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
-  background-size: 500%;
-}
-
-@keyframes titleEffect {
-  0% {background-position-x:0;background-position-y:0}
-  50% {background-position-x:200%;background-position-y:100%}
-  100% {background-position-x:400%;background-position-y:0}
-}

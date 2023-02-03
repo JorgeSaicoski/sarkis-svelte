@@ -1,14 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+.dark {
+  background-color: #373435;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.base {
+  background-color: #13A9AF;
+}
+
+.darkText {
+  color: #373435;
+}
+.darkText a, .darkText p {
+  color: #373435;
+}
+
+.whiteText {
+  color: #FFFFFF;
+}
+.whiteText a, .whiteText p {
+  color: #FFFFFF;
+}
+
+.baseText {
+  color: #13A9AF;
+}
+.baseText a, .baseText p {
+  color: #13A9AF;
+}
+
+.title {
+  font-size: 34px;
+  text-align: center;
+  --s: 200px; /* control the size*/
+  --_g: radial-gradient(#0000 70%,#1a2030 71%);
+  background: var(--_g), var(--_g) calc(var(--s) / 2) calc(var(--s) / 2), conic-gradient(#13A9AF 25%, #FFFFFF 0 50%, #373435 0 75%, #373435 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position-x: 0;
+  background-position-y: 0;
+  animation-name: titleEffect;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  background-size: 400%;
+  font-family: "Rubik", sans-serif;
+  padding: 10%;
+}
+
+#sobre {
+  padding: 5vh;
+}
+
 .dark {
   background-color: #373435 !important;
 }
 
+@keyframes titleEffect {
+  0% {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  50% {
+    background-position-x: 200%;
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-x: 50%;
+    background-position-y: 0;
+  }
+}
 nav, footer {
   display: flex;
-  background-color: #373435;
 }
 
 nav {
   flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav .buttones {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 nav .links {
@@ -24,7 +101,6 @@ nav .links div {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: #13A9AF 2px solid;
   overflow: hidden;
 }
 nav .links div a {
@@ -32,7 +108,6 @@ nav .links div a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #13A9AF;
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -49,11 +124,20 @@ nav .logo img {
   width: 250px;
   height: 75px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  nav .links {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  nav .links {
+    width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -64,44 +148,9 @@ section {
 
 body {
   margin: 0;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #13A9AF;
-}
-
-.title {
-  font-size: 34px;
-  text-align: center;
-  --s: 120px; /* control the size*/
-  --_g: radial-gradient(#0000 70%,#1a2030 71%);
-  background: var(--_g), var(--_g) calc(var(--s) / 2) calc(var(--s) / 2), conic-gradient(#13A9AF 25%, #FFFFFF 0 50%, #373435 0 75%, #373435 0);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-position-x: 0;
-  background-position-y: 0;
-  animation-name: titleEffect;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
-  background-size: 500%;
-}
-
-@keyframes titleEffect {
-  0% {
-    background-position-x: 0;
-    background-position-y: 0;
-  }
-  50% {
-    background-position-x: 200%;
-    background-position-y: 100%;
-  }
-  100% {
-    background-position-x: 400%;
-    background-position-y: 0;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

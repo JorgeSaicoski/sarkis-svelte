@@ -1,0 +1,27 @@
+.dark{
+  background-color: $dark-color;
+}
+.white{
+  background-color: $white-color;
+}
+.base{
+  background-color: $base-color;
+}
+.darkText{
+  color: $dark-color;
+  & a, p{
+    color: $dark-color;
+  }
+}
+.whiteText{
+  color: $white-color;
+  & a, p{
+    color: $white-color;
+  }
+}
+.baseText{
+  color: $base-color;
+  & a, p{
+    color: $base-color;
+  }
+}

@@ -5,22 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/images/allcolor.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/darklogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/favigreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/images/whitelogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/store/dark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/style/_dark.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/style/_sobre.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/images/logo.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/_effects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_effects.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +33,8 @@
         <option value="Vantajas" />
         <option value="Asociacion" />
         <option value="SCSS File" />
+        <option value="dark" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/jorgesaicoski/Documents/Projects/sarkis-svelte/src/lib/images",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/jorgesaicoski/Documents/Projects/sarkis-svelte/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/home/jorgesaicoski/Documents/Projects/sarkis-svelte/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jorgesaicoski/Documents/Projects/sarkis-svelte/src/lib/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/jorgesaicoski/Documents/Projects/sarkis-svelte/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/jorgesaicoski/Documents/Projects/sarkis-svelte/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib/images" />
@@ -98,6 +96,7 @@
       <workItem from="1675268330605" duration="30000" />
       <workItem from="1675268395597" duration="330000" />
       <workItem from="1675358109788" duration="17410000" />
+      <workItem from="1675437793712" duration="7005000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,14 @@
+<script>
+    import logo from "$lib/images/logo.png"
+    import logoDark from "$lib/images/favigreen.png"
+    import DarkMode from "$lib/store/dark.js";
 
+    let dark
+    DarkMode.subscribe((mode)=>{
+        dark = mode
+    })
+</script>
 <div class="title">
-    <h1>Sarkis Dev</h1>
     <h3>Tenga su aplicacion desarrolada por una equipe especializadad en empreendedorismo.</h3>
     <p>Como el tero, el centinela del pampa, estamos siempre atento a las necesidades de nuestros clientes y a las nuevas tecnologias.</p>
 </div>
@@ -13,6 +21,7 @@
     <p>Tener una base de clientes que permita alquilar los mejores servidores.</p>
 </div>
 <div class="valores">
+    <h3>Valores</h3>
     <div class="texto">
         <h3>Flexibilidad</h3>
         <p>Tenemos nuestros servicios base. Pero, siempre estamos abierto en realizar un nuevo servicio que pueda ayudar nuestro cliente a algun objetivo especifico.</p>

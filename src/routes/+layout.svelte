@@ -1,16 +1,43 @@
 <script>
     import "$lib/style/main.css"
     import logo from "$lib/images/whitelogo.png"
+    import DarkMode from "$lib/store/dark.js";
+
+    let dark
+    DarkMode.subscribe((mode)=>{
+        console.log(mode)
+        dark = mode
+    })
+
+    function changeToDark(){
+        DarkMode.set("dark")
+    }
+    function changeToBase(){
+        DarkMode.set("base")
+    }
+
+
 </script>
 
-<nav>
+<nav
+        class:base={dark==="base"}
+        class:dark={dark==="dark"}
+>
     <div class="logo">
         <img src={logo} />
     </div>
-    <button>
-        Dark Mode
-    </button>
-    <div class="links">
+    <div class="buttones">
+        <button on:click={changeToBase}>
+            Pagina Clara
+        </button>
+        <button on:click={changeToDark}>
+            Pagina Escura
+        </button>
+    </div>
+    <div class="links"
+         class:whiteText={dark==="base"}
+         class:baseText={dark==="dark"}
+    >
         <div>
             <a href="/">Inicio</a>
         </div>

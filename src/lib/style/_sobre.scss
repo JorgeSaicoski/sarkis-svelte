@@ -1,0 +1,26 @@
+.title{
+  font-size: 34px;
+  text-align: center;
+  --s: 200px; /* control the size*/
+
+  --_g: radial-gradient(#0000 70%,#1a2030 71%);
+  background:
+          var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
+          conic-gradient($base-color 25%,$white-color 0 50%,$dark-color 0 75%,$dark-color 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position-x: 0;
+  background-position-y: 0;
+  animation-name: titleEffect;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  background-size: 400%;
+  font-family: 'Rubik', sans-serif;
+  padding: 10%;
+}
+
+#sobre{
+  padding: 5vh;
+}

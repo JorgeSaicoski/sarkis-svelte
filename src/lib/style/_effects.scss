@@ -1,3 +1,9 @@
 .dark{
   background-color: $dark-color !important;
 }
+
+@keyframes titleEffect {
+  0% {background-position-x:0;background-position-y:0}
+  50% {background-position-x:200%;background-position-y:100%}
+  100% {background-position-x:50%;background-position-y:0}
+}
