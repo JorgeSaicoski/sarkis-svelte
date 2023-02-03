@@ -11,15 +11,68 @@ nav, footer{
   display: flex;
 }
 
+input[type="checkbox"]:checked+label{
+  align-items: flex-end;
+  transition: 0.3s;
+  background-color: $base-color;
+  box-shadow: inset 3px 2px 10px 2px $dark-color;
+  & img{
+    position: absolute;
+    top:2.5px;
+    left:70px;
+    background-color: $white-color;
+    box-shadow: inset 3px 2px 10px 2px $dark-color;
+    transition: 0.5s;
+  }
+}
 
 nav{
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+  transition: 2s;
   & .buttones{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    & #dark-mode{
+      height: 0;
+      width: 0;
+      visibility: hidden;
+    }
+    & .dark-mode-label{
+      width: 125px;
+      height: 60px;
+      position: relative;
+      display: block;
+      padding: 0 2px;
+      background-color: $white-color;
+      border-radius: 200px;
+      box-shadow: inset 0px 5px 15px $dark-color, inset 0px -5px 15px $white-color;
+      transition: 0.3s;
+      &:after{
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top:2px;
+        left: 2px;
+        align-items: flex-end;
+        transition: 0.3s;
+      }
+      & img{
+        position: absolute;
+        top:2.5px;
+        left:3px;
+        background-color: #232528;
+        border-radius: 200px;
+        padding: 5.5px;
+        width: 45px;
+        height: 45px;
+        transition: 0.3s;
+        box-shadow: inset 3px 2px 10px 2px $base-color;
+      }
+    }
   }
   & .links{
     display: flex;
@@ -76,6 +129,7 @@ nav{
 section{
   min-height: 100vh;
   transition: 2s;
+  padding: 5vh;
 }
 
 body{
@@ -84,5 +138,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
 }
+
+
 
 

@@ -53,9 +53,28 @@
 }
 
 #sobre {
-  padding: 5vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+#sobre .left {
+  width: 600px;
+  font-size: 32px;
+  font-style: oblique;
+}
+#sobre .mision, #sobre .vision {
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 .dark {
   background-color: #373435 !important;
 }
@@ -78,15 +97,69 @@ nav, footer {
   display: flex;
 }
 
+input[type=checkbox]:checked + label {
+  align-items: flex-end;
+  transition: 0.3s;
+  background-color: #13A9AF;
+  box-shadow: inset 3px 2px 10px 2px #373435;
+}
+input[type=checkbox]:checked + label img {
+  position: absolute;
+  top: 2.5px;
+  left: 70px;
+  background-color: #FFFFFF;
+  box-shadow: inset 3px 2px 10px 2px #373435;
+  transition: 0.5s;
+}
+
 nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+  transition: 2s;
 }
 nav .buttones {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+nav .buttones #dark-mode {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+nav .buttones .dark-mode-label {
+  width: 125px;
+  height: 60px;
+  position: relative;
+  display: block;
+  padding: 0 2px;
+  background-color: #FFFFFF;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px #373435, inset 0px -5px 15px #FFFFFF;
+  transition: 0.3s;
+}
+nav .buttones .dark-mode-label:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  align-items: flex-end;
+  transition: 0.3s;
+}
+nav .buttones .dark-mode-label img {
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  background-color: #232528;
+  border-radius: 200px;
+  padding: 5.5px;
+  width: 45px;
+  height: 45px;
+  transition: 0.3s;
+  box-shadow: inset 3px 2px 10px 2px #13A9AF;
 }
 nav .links {
   display: flex;
@@ -144,6 +217,7 @@ nav .logo img {
 section {
   min-height: 100vh;
   transition: 2s;
+  padding: 5vh;
 }
 
 body {

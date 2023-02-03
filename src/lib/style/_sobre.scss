@@ -22,5 +22,28 @@
 }
 
 #sobre{
-  padding: 5vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  & .left{
+    width: 600px;
+    font-size: 32px;
+    font-style: oblique;
+  }
+  & .mision{
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  & .vision{
+    @extend .mision
+  }
 }

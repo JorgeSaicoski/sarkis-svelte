@@ -12,16 +12,22 @@
     <h3>Tenga su aplicacion desarrolada por una equipe especializadad en empreendedorismo.</h3>
     <p>Como el tero, el centinela del pampa, estamos siempre atento a las necesidades de nuestros clientes y a las nuevas tecnologias.</p>
 </div>
-<div class="mision">
-    <h3>Misión</h3>
-    <p>Desarollar aplicaciones para ayudar empresas y empleados a alcanzaren sus objetivos.</p>
+<div class="left">
+    <p>Creamos la aplicación que se encaja con su negocio. Nuestros softwares respetan el flujo normal de tu negocio, el se adapta a ti y no tu a el.</p>
+    <p>Un tero siempre </p>
 </div>
-<div class="vision">
-    <h3>Visión</h3>
-    <p>Tener una base de clientes que permita alquilar los mejores servidores.</p>
+<div class="rigth">
+    <div class="mision">
+        <h3>Misión:</h3>
+        <p>Desarollar aplicaciones para ayudar empresas y empleados a alcanzaren sus objetivos.</p>
+    </div>
+    <div class="vision">
+        <h3>Visión</h3>
+        <p>Tener una base de clientes que permita alquilar los mejores servidores.</p>
+    </div>
 </div>
 <div class="valores">
-    <h3>Valores</h3>
+    <h3>Valores:</h3>
     <div class="texto">
         <h3>Flexibilidad</h3>
         <p>Tenemos nuestros servicios base. Pero, siempre estamos abierto en realizar un nuevo servicio que pueda ayudar nuestro cliente a algun objetivo especifico.</p>

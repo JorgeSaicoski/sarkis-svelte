@@ -19,13 +19,22 @@
 >
     <Sobre></Sobre>
 </section>
-<section id="servicios">
+<section id="servicios"
+         class:white={dark==="base"}
+         class:base={dark==="dark"}
+>
     <Servicios></Servicios>
 </section>
-<section id="vantajas">
+<section id="vantajas"
+         class:white={dark==="base"}
+         class:base={dark==="dark"}
+>
     <Vantajas></Vantajas>
 </section>
-<section id="asociacion">
+<section id="asociacion"
+         class:white={dark==="base"}
+         class:base={dark==="dark"}
+>
     <Asociacion></Asociacion>
 </section>
 

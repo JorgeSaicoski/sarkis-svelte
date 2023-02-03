@@ -1,21 +1,24 @@
 <script>
     import "$lib/style/main.css"
     import logo from "$lib/images/whitelogo.png"
+    import logoDark from "$lib/images/logo.png"
     import DarkMode from "$lib/store/dark.js";
+    import darkmode from "$lib/images/favigreen.png"
 
     let dark
     DarkMode.subscribe((mode)=>{
         console.log(mode)
         dark = mode
     })
+    let darkCheck = false
+    function changeMode() {
+        if (darkCheck){
+            DarkMode.set("base")
 
-    function changeToDark(){
-        DarkMode.set("dark")
+        }else{
+            DarkMode.set("dark")
+        }
     }
-    function changeToBase(){
-        DarkMode.set("base")
-    }
-
 
 </script>
 
@@ -24,15 +27,17 @@
         class:dark={dark==="dark"}
 >
     <div class="logo">
-        <img src={logo} />
+        {#if darkCheck}
+            <img src={logoDark} />
+        {:else}
+            <img src={logo} />
+        {/if}
     </div>
     <div class="buttones">
-        <button on:click={changeToBase}>
-            Pagina Clara
-        </button>
-        <button on:click={changeToDark}>
-            Pagina Escura
-        </button>
+        <input type="checkbox" id="dark-mode" on:change={changeMode} bind:checked={darkCheck}>
+        <label for="dark-mode" class="dark-mode-label">
+            <img src="{darkmode}">
+        </label>
     </div>
     <div class="links"
          class:whiteText={dark==="base"}
@@ -56,7 +61,10 @@
     </div>
 </nav>
 <slot></slot>
-<footer>
+<footer
+        class:base={dark==="base"}
+        class:dark={dark==="dark"}
+>
     <div>
         <div>
             <a>Inicio</a>
@@ -75,3 +83,4 @@
         Contato Info
     </div>
 </footer>
+
