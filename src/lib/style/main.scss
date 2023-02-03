@@ -2,8 +2,8 @@
 @import 'effects';
 
 nav, footer{
-  background-color: $base-color;
   display: flex;
+  background-color: $dark-color;
 }
 
 nav{
@@ -21,13 +21,14 @@ nav{
       display: flex;
       justify-content: center;
       align-items: center;
-      border-left: $white-color 2px solid;
+      border-left: $base-color 2px solid;
+      overflow: hidden;
       & a {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: $white-color;
+        color: $base-color;
         text-align: center;
         text-decoration: none;
         width: 100%;
@@ -64,4 +65,32 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $base-color;
+}
+
+.title{
+  font-size: 34px;
+  text-align: center;
+  --s: 120px; /* control the size*/
+
+  --_g: radial-gradient(#0000 70%,#1a2030 71%);
+  background:
+          var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
+          conic-gradient($base-color 25%,$white-color 0 50%,$dark-color 0 75%,$dark-color 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position-x: 0;
+  background-position-y: 0;
+  animation-name: titleEffect;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  background-size: 500%;
+}
+
+@keyframes titleEffect {
+  0% {background-position-x:0;background-position-y:0}
+  50% {background-position-x:200%;background-position-y:100%}
+  100% {background-position-x:400%;background-position-y:0}
 }

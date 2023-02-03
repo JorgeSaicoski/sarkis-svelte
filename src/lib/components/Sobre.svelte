@@ -1,5 +1,5 @@
 
-<div>
+<div class="title">
     <h1>Sarkis Dev</h1>
     <h3>Tenga su aplicacion desarrolada por una equipe especializadad en empreendedorismo.</h3>
     <p>Como el tero, el centinela del pampa, estamos siempre atento a las necesidades de nuestros clientes y a las nuevas tecnologias.</p>

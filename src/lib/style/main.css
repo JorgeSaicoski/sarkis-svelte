@@ -1,10 +1,10 @@
 .dark {
-  background-color: #003ac5 !important;
+  background-color: #373435 !important;
 }
 
 nav, footer {
-  background-color: #00a9ac;
   display: flex;
+  background-color: #373435;
 }
 
 nav {
@@ -24,14 +24,15 @@ nav .links div {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: #f7fdf8 2px solid;
+  border-left: #13A9AF 2px solid;
+  overflow: hidden;
 }
 nav .links div a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #f7fdf8;
+  color: #13A9AF;
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -67,6 +68,40 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #13A9AF;
+}
+
+.title {
+  font-size: 34px;
+  text-align: center;
+  --s: 120px; /* control the size*/
+  --_g: radial-gradient(#0000 70%,#1a2030 71%);
+  background: var(--_g), var(--_g) calc(var(--s) / 2) calc(var(--s) / 2), conic-gradient(#13A9AF 25%, #FFFFFF 0 50%, #373435 0 75%, #373435 0);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position-x: 0;
+  background-position-y: 0;
+  animation-name: titleEffect;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  background-size: 500%;
+}
+
+@keyframes titleEffect {
+  0% {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  50% {
+    background-position-x: 200%;
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-x: 400%;
+    background-position-y: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

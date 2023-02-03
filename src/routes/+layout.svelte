@@ -1,12 +1,15 @@
 <script>
     import "$lib/style/main.css"
-    import logo from "$lib/images/logo.jpeg"
+    import logo from "$lib/images/whitelogo.png"
 </script>
 
 <nav>
     <div class="logo">
         <img src={logo} />
     </div>
+    <button>
+        Dark Mode
+    </button>
     <div class="links">
         <div>
             <a href="/">Inicio</a>

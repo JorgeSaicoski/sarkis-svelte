@@ -4,43 +4,19 @@
     import Asociacion from "$lib/components/Asociacion.svelte";
     import Vantajas from "$lib/components/Vantajas.svelte";
 
-    let isOn=false;
-
-
-    let y, sobreH, servicioH,vantajasH,asociacionH
-
-
-
 </script>
 
-<svelte:window bind:scrollY={y} on:scroll={scroll}></svelte:window>
-<section id="sobre"
-         bind:clientHeight={sobreH}
->
-    {#if y<sobreH}
+<section id="sobre">
     <Sobre></Sobre>
-    {/if}
 </section>
-<section id="servicios"
-         bind:clientHeight={servicioH}
->
-    {#if y>(servicioH-(sobreH*0.75))}
+<section id="servicios">
     <Servicios></Servicios>
-    {/if}
 </section>
-<section id="vantajas"
-         bind:clientHeight={vantajasH}
->
-    {#if y>(vantajasH-(servicioH*0.75))}
+<section id="vantajas">
     <Vantajas></Vantajas>
-    {/if}
 </section>
-<section id="asociacion"
-         bind:clientHeight={vantajasH}
->
-    {#if y>(asociacionH-(servicioH*0.75))}
+<section id="asociacion">
     <Asociacion></Asociacion>
-    {/if}
 </section>
 
 
