@@ -1,6 +1,4 @@
 <script>
-    import logo from "$lib/images/logo.png"
-    import logoDark from "$lib/images/favigreen.png"
     import DarkMode from "$lib/store/dark.js";
 
     let dark
@@ -12,9 +10,13 @@
     <h3>Tenga su aplicacion desarrolada por una equipe especializadad en empreendedorismo.</h3>
     <p>Como el tero, el centinela del pampa, estamos siempre atento a las necesidades de nuestros clientes y a las nuevas tecnologias.</p>
 </div>
-<div class="left">
+<h2 class="sub-title">OBJETIVOS</h2>
+<div class="left"
+     class:baseText={dark==="base"}
+     class:whiteText={dark==="dark"}
+>
     <p>Creamos la aplicación que se encaja con su negocio. Nuestros softwares respetan el flujo normal de tu negocio, el se adapta a ti y no tu a el.</p>
-    <p>Un tero siempre </p>
+    <p>Buscamos dar la mejor experiencia posible en el proceso de creacion y en la utilizacion de nuestros productos. Queremos nuestros clientes felices y satisfechos.</p>
 </div>
 <div class="rigth">
     <div class="mision">
@@ -27,7 +29,7 @@
     </div>
 </div>
 <div class="valores">
-    <h3>Valores:</h3>
+    <h3 class="sub-title">Valores:</h3>
     <div class="texto">
         <h3>Flexibilidad</h3>
         <p>Tenemos nuestros servicios base. Pero, siempre estamos abierto en realizar un nuevo servicio que pueda ayudar nuestro cliente a algun objetivo especifico.</p>

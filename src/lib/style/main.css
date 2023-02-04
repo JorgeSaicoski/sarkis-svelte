@@ -56,24 +56,50 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  #sobre {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#sobre .sub-title {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  transition: 1s;
+  width: 100%;
+  text-shadow: 0px -6px 0 #373435, 0px -6px 0 #13A9AF, 0 0 6px #13A9AF, 0 6px 3px #373435, 0 12px 6px #13A9AF, 0 18px 18px #13A9AF, 0 24px 24px #FFFFFF, 0 36px 36px #13A9AF;
+  animation-name: focus;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
 }
 #sobre .left {
   width: 600px;
   font-size: 32px;
   font-style: oblique;
 }
+#sobre .rigth {
+  width: 600px;
+  background-color: #13A9AF;
+  border-radius: 100px;
+}
 #sobre .mision, #sobre .vision {
   margin: 20px;
   padding: 20px;
-  width: 400px;
   border-radius: 20px;
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  font-size: 24px;
 }
 .dark {
   background-color: #373435 !important;
@@ -91,6 +117,17 @@
   100% {
     background-position-x: 50%;
     background-position-y: 0;
+  }
+}
+@keyframes focus {
+  0% {
+    text-shadow: 0px -6px 0 #13A9AF, 0px -6px 0 #13A9AF, -10px 0 6px #13A9AF, -10px 6px 3px #373435, -10px 12px 6px #13A9AF, -10px 18px 18px #13A9AF, -10px 24px 24px #FFFFFF, -10px 36px 36px #13A9AF;
+  }
+  50% {
+    text-shadow: 0px 0px 0 #13A9AF, 0px 0px 0 #13A9AF, 0 0 0px #13A9AF, 0 0px 0px #13A9AF, 0 0px 0px #13A9AF, 0 0px 0px #13A9AF, 0 24px 24px #FFFFFF, 0 36px 6px #13A9AF;
+  }
+  100% {
+    text-shadow: 0px -6px 0 #13A9AF, 0px -6px 0 #13A9AF, 10px 0 6px #13A9AF, 10px 0px 3px #373435, 10px 2px 6px #13A9AF, 10px 0px 18px #13A9AF, 10px 0px 24px #FFFFFF, 10px 36px 36px #13A9AF;
   }
 }
 nav, footer {
@@ -225,6 +262,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+body > div {
+  scroll-snap-align: start none;
 }
 
 /*# sourceMappingURL=main.css.map */
