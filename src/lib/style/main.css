@@ -41,7 +41,7 @@
   color: #373435;
 }
 .darkText a, .darkText p, .darkText h1, .darkText h2, .darkText h3, .darkText h4, .darkText h5, .darkText h6 {
-  color: #13A9AF;
+  color: #373435;
 }
 
 .title {
@@ -118,27 +118,33 @@
   justify-content: space-between;
   font-size: 24px;
 }
-#sobre .valores .texto {
-  position: relative;
-  padding-top: 40px;
-}
-#sobre .valores h2 {
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-position-x: 0;
-  background-position-y: 0;
-  background-repeat: repeat;
-  width: 100%;
-  animation-name: bg-move;
-  animation-duration: 600s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+#sobre .valores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #sobre .valores h2 {
   font-size: 60px;
+  width: 100%;
+  margin: 5vh auto;
+  padding: 1vh 2vw;
+  border-radius: 10px;
+  border-width: 5px 3px;
+  border-style: solid;
+  border-color: #373435;
 }
-#sobre .valores h3 {
-  font-size: 25px;
+#sobre .valores .texto {
+  width: 400px;
+  height: 400px;
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 35px;
+  font-size: 24px;
+}
+#sobre .valores .texto h3 {
+  text-align: center;
+  font-size: 35px;
 }
 
 .dark {

@@ -19,6 +19,10 @@
 >
     <Sobre></Sobre>
 </section>
+<div>
+    <p>Haga un <a href="/presupuesto">PRESUPUESTO</a> de tu aplicacion sin compromiso!</p>
+    <p>Y decidas si deseas entrar en <a>contacto!</a></p>
+</div>
 <section id="servicios"
          class:white={dark==="base"}
          class:base={dark==="dark"}
