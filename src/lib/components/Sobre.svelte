@@ -18,7 +18,7 @@
     <p>Creamos la aplicación que se encaja con su negocio. Nuestros softwares respetan el flujo normal de tu negocio, el se adapta a ti y no tu a el.</p>
     <p>Buscamos dar la mejor experiencia posible en el proceso de creacion y en la utilizacion de nuestros productos. Queremos nuestros clientes felices y satisfechos.</p>
 </div>
-<div class="rigth">
+<div class="rigth dark whiteText baseDraw">
     <div class="mision">
         <h3>Misión:</h3>
         <p>Desarollar aplicaciones para ayudar empresas y empleados a alcanzaren sus objetivos.</p>

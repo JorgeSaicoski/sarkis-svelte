@@ -11,24 +11,36 @@
   background-color: #13A9AF;
 }
 
-.darkText {
-  color: #373435;
-}
-.darkText a, .darkText p {
-  color: #373435;
+.baseDraw {
+  background-image: linear-gradient(25deg, transparent 65%, #13A9AF, transparent 70%), linear-gradient(-25deg, transparent 65%, #13A9AF, transparent 70%), linear-gradient(-25deg, transparent 30%, #13A9AF, transparent 35%), linear-gradient(25deg, transparent 30%, #13A9AF, transparent 35%), linear-gradient(65deg, transparent 65%, #13A9AF, transparent 70%), linear-gradient(-65deg, transparent 65%, #13A9AF, transparent 70%), linear-gradient(-65deg, transparent 30%, #13A9AF, transparent 35%), linear-gradient(65deg, transparent 30%, #13A9AF, transparent 35%);
+  background-size: 4em 5em, 4em 5em, 4em 5em, 4em 5em, 5em 2em, 5em 2em, 5em 2em, 5em 2em;
+  background-attachment: fixed;
 }
 
-.whiteText {
-  color: #FFFFFF;
-}
-.whiteText a, .whiteText p {
-  color: #FFFFFF;
+.darkDraw {
+  background-image: linear-gradient(25deg, transparent 65%, #373435, transparent 70%), linear-gradient(-25deg, transparent 65%, #373435, transparent 70%), linear-gradient(-25deg, transparent 30%, #373435, transparent 35%), linear-gradient(25deg, transparent 30%, #373435, transparent 35%), linear-gradient(65deg, transparent 65%, #373435, transparent 70%), linear-gradient(-65deg, transparent 65%, #373435, transparent 70%), linear-gradient(-65deg, transparent 30%, #373435, transparent 35%), linear-gradient(65deg, transparent 30%, #373435, transparent 35%);
+  background-size: 4em 5em, 4em 5em, 4em 5em, 4em 5em, 5em 2em, 5em 2em, 5em 2em, 5em 2em;
+  background-attachment: fixed;
 }
 
 .baseText {
   color: #13A9AF;
 }
-.baseText a, .baseText p {
+.baseText a, .baseText p, .baseText h1, .baseText h2, .baseText h3, .baseText h4, .baseText h5, .baseText h6 {
+  color: #13A9AF;
+}
+
+.whiteText {
+  color: #FFFFFF;
+}
+.whiteText a, .whiteText p, .whiteText h1, .whiteText h2, .whiteText h3, .whiteText h4, .whiteText h5, .whiteText h6 {
+  color: #FFFFFF;
+}
+
+.darkText {
+  color: #373435;
+}
+.darkText a, .darkText p, .darkText h1, .darkText h2, .darkText h3, .darkText h4, .darkText h5, .darkText h6 {
   color: #13A9AF;
 }
 
@@ -86,8 +98,9 @@
 }
 #sobre .rigth {
   width: 600px;
-  background-color: #13A9AF;
-  border-radius: 100px;
+  border-radius: 100px 10px 0 100px;
+  box-shadow: 2px 5px 15px #373435, inset 2px 5px 60px 3px #FFFFFF;
+  margin-right: -2vw;
 }
 #sobre .mision, #sobre .vision {
   margin: 20px;

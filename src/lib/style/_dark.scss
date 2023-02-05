@@ -4,24 +4,153 @@
 .white{
   background-color: $white-color;
 }
-.base{
+.base {
   background-color: $base-color;
 }
-.darkText{
-  color: $dark-color;
-  & a, p{
-    color: $dark-color;
+.baseDraw{
+  background-image:
+          linear-gradient(
+                          25deg,
+                          transparent 65%,
+                          $base-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -25deg,
+                          transparent 65%,
+                          $base-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -25deg,
+                          transparent 30%,
+                          $base-color,
+                          transparent 35%
+          ),
+          linear-gradient(
+                          25deg,
+                          transparent 30%,
+                          $base-color,
+                          transparent 35%
+          ),
+
+          linear-gradient(
+                          65deg,
+                          transparent 65%,
+                          $base-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -65deg,
+                          transparent 65%,
+                          $base-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -65deg,
+                          transparent 30%,
+                          $base-color,
+                          transparent 35%
+          ),
+          linear-gradient(
+                          65deg,
+                          transparent 30%,
+                          $base-color,
+                          transparent 35%
+          );
+  background-size:
+          4em 5em,
+          4em 5em,
+          4em 5em,
+          4em 5em,
+
+          5em 2em,
+          5em 2em,
+          5em 2em,
+          5em 2em;
+  background-attachment: fixed;
+}
+
+.darkDraw{
+  background-image:
+          linear-gradient(
+                          25deg,
+                          transparent 65%,
+                          $dark-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -25deg,
+                          transparent 65%,
+                          $dark-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -25deg,
+                          transparent 30%,
+                          $dark-color,
+                          transparent 35%
+          ),
+          linear-gradient(
+                          25deg,
+                          transparent 30%,
+                          $dark-color,
+                          transparent 35%
+          ),
+
+          linear-gradient(
+                          65deg,
+                          transparent 65%,
+                          $dark-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -65deg,
+                          transparent 65%,
+                          $dark-color,
+                          transparent 70%
+          ),
+          linear-gradient(
+                          -65deg,
+                          transparent 30%,
+                          $dark-color,
+                          transparent 35%
+          ),
+          linear-gradient(
+                          65deg,
+                          transparent 30%,
+                          $dark-color,
+                          transparent 35%
+          );
+  background-size:
+          4em 5em,
+          4em 5em,
+          4em 5em,
+          4em 5em,
+
+          5em 2em,
+          5em 2em,
+          5em 2em,
+          5em 2em;
+  background-attachment: fixed;
+}
+
+
+.baseText{
+  color: $base-color;
+  & a, p, h1, h2, h3, h4, h5, h6{
+    color: $base-color;
   }
 }
 .whiteText{
   color: $white-color;
-  & a, p{
+  & a, p, h1, h2, h3, h4, h5, h6{
     color: $white-color;
   }
 }
-.baseText{
-  color: $base-color;
-  & a, p{
+.darkText{
+  color: $dark-color;
+  & a, p, h1, h2, h3, h4, h5, h6{
     color: $base-color;
   }
 }
