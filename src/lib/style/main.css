@@ -64,12 +64,20 @@
   padding: 10%;
 }
 
+.sub-title {
+  width: 50%;
+  text-align: left;
+  padding: 2vw;
+  display: flex;
+}
+
 #sobre {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
   #sobre {
@@ -84,23 +92,19 @@
   font-family: "Rubik", sans-serif;
   transition: 1s;
   width: 100%;
-  text-shadow: 0px -6px 0 #373435, 0px -6px 0 #13A9AF, 0 0 6px #13A9AF, 0 6px 3px #373435, 0 12px 6px #13A9AF, 0 18px 18px #13A9AF, 0 24px 24px #FFFFFF, 0 36px 36px #13A9AF;
-  animation-name: focus;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
+  text-shadow: -6px -6px 10px #373435, -5px -5px 5px #373435, -4px -4px 10px #373435, -3px -3px 15px #373435, 6px 6px #373435, 5px 5px #373435, 4px 4px #373435, 3px 3px #373435;
 }
 #sobre .left {
   width: 600px;
   font-size: 32px;
   font-style: oblique;
+  padding: 2vw;
 }
 #sobre .rigth {
   width: 600px;
   border-radius: 100px 10px 0 100px;
   box-shadow: 2px 5px 15px #373435, inset 2px 5px 60px 3px #FFFFFF;
-  margin-right: -2vw;
+  padding: 2vw;
 }
 #sobre .mision, #sobre .vision {
   margin: 20px;
@@ -114,6 +118,29 @@
   justify-content: space-between;
   font-size: 24px;
 }
+#sobre .valores .texto {
+  position: relative;
+  padding-top: 40px;
+}
+#sobre .valores h2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: repeat;
+  width: 100%;
+  animation-name: bg-move;
+  animation-duration: 600s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#sobre .valores h2 {
+  font-size: 60px;
+}
+#sobre .valores h3 {
+  font-size: 25px;
+}
+
 .dark {
   background-color: #373435 !important;
 }
@@ -132,15 +159,26 @@
     background-position-y: 0;
   }
 }
-@keyframes focus {
+@keyframes bg-move {
   0% {
-    text-shadow: 0px -6px 0 #13A9AF, 0px -6px 0 #13A9AF, -10px 0 6px #13A9AF, -10px 6px 3px #373435, -10px 12px 6px #13A9AF, -10px 18px 18px #13A9AF, -10px 24px 24px #FFFFFF, -10px 36px 36px #13A9AF;
+    background-position-x: 0;
   }
   50% {
-    text-shadow: 0px 0px 0 #13A9AF, 0px 0px 0 #13A9AF, 0 0 0px #13A9AF, 0 0px 0px #13A9AF, 0 0px 0px #13A9AF, 0 0px 0px #13A9AF, 0 24px 24px #FFFFFF, 0 36px 6px #13A9AF;
+    background-position-x: 10000px;
   }
   100% {
-    text-shadow: 0px -6px 0 #13A9AF, 0px -6px 0 #13A9AF, 10px 0 6px #13A9AF, 10px 0px 3px #373435, 10px 2px 6px #13A9AF, 10px 0px 18px #13A9AF, 10px 0px 24px #FFFFFF, 10px 36px 36px #13A9AF;
+    background-position-x: 20000px;
+  }
+}
+@keyframes heart {
+  0% {
+    scale: 0.85;
+  }
+  50% {
+    scale: 0.95;
+  }
+  100% {
+    scale: 1;
   }
 }
 nav, footer {
@@ -267,7 +305,6 @@ nav .logo img {
 section {
   min-height: 100vh;
   transition: 2s;
-  padding: 5vh;
 }
 
 body {

@@ -5,12 +5,24 @@
     DarkMode.subscribe((mode)=>{
         dark = mode
     })
+
+    let y
+    let x
+    function handleMousemove(e){
+        x = e.clientX
+        y = e.clientY
+    }
 </script>
 <div class="title">
     <h3>Tenga su aplicacion desarrolada por una equipe especializadad en empreendedorismo.</h3>
     <p>Como el tero, el centinela del pampa, estamos siempre atento a las necesidades de nuestros clientes y a las nuevas tecnologias.</p>
 </div>
-<h2 class="sub-title">OBJETIVOS</h2>
+<h2 class="sub-title"
+    class:whiteText={dark==="base"}
+    class:baseText={dark==="dark"}
+    class:base={dark==="base"}
+    class:white={dark==="dark"}
+>OBJETIVOS</h2>
 <div class="left"
      class:baseText={dark==="base"}
      class:whiteText={dark==="dark"}
@@ -18,7 +30,12 @@
     <p>Creamos la aplicación que se encaja con su negocio. Nuestros softwares respetan el flujo normal de tu negocio, el se adapta a ti y no tu a el.</p>
     <p>Buscamos dar la mejor experiencia posible en el proceso de creacion y en la utilizacion de nuestros productos. Queremos nuestros clientes felices y satisfechos.</p>
 </div>
-<div class="rigth dark whiteText baseDraw">
+<div class="rigth dark whiteText baseDraw"
+     on:mousemove={handleMousemove}
+     style="  background-position-x: {x}px;
+  background-position-y: {y}px;
+"
+>
     <div class="mision">
         <h3>Misión:</h3>
         <p>Desarollar aplicaciones para ayudar empresas y empleados a alcanzaren sus objetivos.</p>
@@ -29,7 +46,10 @@
     </div>
 </div>
 <div class="valores">
-    <h3 class="sub-title">Valores:</h3>
+    <h2 
+            class:base={dark==="base"}
+            class:white={dark==="dark"}
+    >Valores:</h2>
     <div class="texto">
         <h3>Flexibilidad</h3>
         <p>Tenemos nuestros servicios base. Pero, siempre estamos abierto en realizar un nuevo servicio que pueda ayudar nuestro cliente a algun objetivo especifico.</p>

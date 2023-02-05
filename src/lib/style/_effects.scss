@@ -8,32 +8,26 @@
   100% {background-position-x:50%;background-position-y:0}
 }
 
-@keyframes focus {
-  0% {    text-shadow:   0px -6px 0 $base-color,
-  0px -6px 0 $base-color,
-  -10px 0 6px $base-color,
-  -10px 6px 3px $dark-color,
-  -10px 12px 6px $base-color,
-  -10px 18px 18px $base-color,
-  -10px 24px 24px $white-color,
-  -10px 36px 36px $base-color;
-  ;}
-  50% {      text-shadow:   0px 0px 0 $base-color,
-  0px 0px 0 $base-color,
-  0 0 0px $base-color,
-  0 0px 0px $base-color,
-  0 0px 0px $base-color,
-  0 0px 0px $base-color,
-  0 24px 24px $white-color,
-  0 36px 6px $base-color;
-  ;}
-  100% {    text-shadow:   0px -6px 0 $base-color,
-  0px -6px 0 $base-color,
-  10px 0 6px $base-color,
-  10px 0px 3px $dark-color,
-  10px 2px 6px $base-color,
-  10px 0px 18px $base-color,
-  10px 0px 24px $white-color,
-  10px 36px 36px $base-color;
-  ;}
+@keyframes bg-move {
+  0%{
+    background-position-x: 0;
+  }
+  50%{
+      background-position-x: 10000px;
+  }
+  100%{
+    background-position-x: 20000px;
+  }
+}
+
+@keyframes heart {
+  0%{
+    scale: 0.85;
+  }
+  50%{
+    scale: 0.95;
+  }
+  100%{
+    scale: 1;
+  }
 }
