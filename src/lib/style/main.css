@@ -138,9 +138,14 @@
   width: 400px;
   height: 400px;
   padding: 1vw;
-  margin: 1vw;
+  margin: 30px;
   border-radius: 35px;
   font-size: 24px;
+  box-shadow: 10px 10px 10px #FFFFFF, 15px 15px 8px #13A9AF;
+  transition: 0.5s;
+}
+#sobre .valores .texto:hover {
+  box-shadow: -5px -5px 12px #FFFFFF, 5px 5px 12px #FFFFFF, -5px -5px 12px #13A9AF, 5px 5px 12px #13A9AF;
 }
 #sobre .valores .texto h3 {
   text-align: center;
