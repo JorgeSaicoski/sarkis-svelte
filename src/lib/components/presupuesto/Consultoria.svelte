@@ -1,11 +1,11 @@
 <script>
     import Calculadora from "$lib/store/calculadora.js";
-    let eCommerce
+    let consultoria = $Calculadora.consultoria
 
 
 
     function submitNext(){
-        $Calculadora.eCommerce = eCommerce
+        $Calculadora.consultoria = consultoria
     }
 
 
@@ -17,13 +17,17 @@
 </script>
 <form on:submit={submitNext}>
     <label>
-        <input type="radio" bind:group={eCommerce} value="cart">
-        Carrito
+        <input type="radio" bind:group={consultoria} value="logo">
+        Logo + Website
     </label>
     <label>
-        <input type="radio" bind:group={eCommerce} value="chat">
-        Con chat
+        <input type="radio" bind:group={consultoria} value="app">
+        Aplicacion Online
+    </label>
+    <label>
+        <input type="radio" bind:group={consultoria} value="adm">
+        Administrativo
     </label>
     <button type="submit">Proximo</button>
 </form>
-<p>{eCommerce}</p>
+<p>{consultoria}</p>
