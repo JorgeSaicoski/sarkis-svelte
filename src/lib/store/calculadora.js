@@ -9,8 +9,7 @@ const Calculadora=writable({
     consultoria: null,
     login: null,
     cloud: null,
-    customerTraffic: null,
-    complexity: null,
+    customerTraffic: null
 })
 
 export default Calculadora

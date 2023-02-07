@@ -24,6 +24,10 @@
         <input type="radio" bind:group={contact} value="dataBase">
         A dentro del website
     </label>
+    <label>
+        <input type="radio" bind:group={contact} value="dataBase">
+        Sin Contacto
+    </label>
     <button type="submit">Proximo</button>
 </form>
 <p>{contact}</p>
