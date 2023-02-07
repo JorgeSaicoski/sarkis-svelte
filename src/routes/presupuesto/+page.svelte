@@ -1,8 +1,11 @@
 <script>
     import Tipo from "$lib/components/presupuesto/Tipo.svelte";
-    import calculadora from "$lib/store/calculadora.js";
+    import Calculadora from "$lib/store/calculadora.js";
 
-    $:console.log(calculadora)
+    Calculadora.subscribe(e=>{
+        console.log(e)
+        console.log(Calculadora)
+    })
 
 
 

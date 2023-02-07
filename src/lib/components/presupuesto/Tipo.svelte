@@ -1,11 +1,11 @@
 <script>
-    import calculadora from "$lib/store/calculadora.js";
+    import Calculadora from "$lib/store/calculadora.js";
     let tipo
 
 
 
     function submitNext(){
-        calculadora.setTipo(tipo)
+        $Calculadora.tipo = tipo
     }
 
 
