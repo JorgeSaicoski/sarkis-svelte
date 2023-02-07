@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Consultoria.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Contact.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/eCommerce.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Tipo.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Tipo.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/store/calculadora.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/store/calculadora.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/_sobre.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_sobre.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/presupuesto/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/presupuesto/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +35,9 @@
         <option value="dark" />
         <option value="Tipo" />
         <option value="JavaScript File" />
+        <option value="Contact" />
+        <option value="eCommerce" />
+        <option value="Consultoria" />
       </list>
     </option>
   </component>
@@ -95,7 +104,8 @@
       <workItem from="1675612365233" duration="9874000" />
       <workItem from="1675633637082" duration="1284000" />
       <workItem from="1675634931751" duration="2000000" />
-      <workItem from="1675701048006" duration="9260000" />
+      <workItem from="1675701048006" duration="10505000" />
+      <workItem from="1675778167640" duration="3356000" />
     </task>
     <servers />
   </component>

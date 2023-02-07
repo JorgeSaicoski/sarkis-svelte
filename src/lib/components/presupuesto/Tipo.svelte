@@ -21,12 +21,20 @@
         Blog
     </label>
     <label>
+        <input type="radio" bind:group={tipo} value="catalago">
+        Catalago
+    </label>
+    <label>
         <input type="radio" bind:group={tipo} value="ecommerce">
         eCommerce
     </label>
     <label>
         <input type="radio" bind:group={tipo} value="portfolio">
         Portfolio
+    </label>
+    <label>
+        <input type="radio" bind:group={tipo} value="completo">
+        Consultoria
     </label>
     <label>
         <input type="radio" bind:group={tipo} value="otro">

@@ -19,6 +19,9 @@
   background-size: 400%;
   font-family: 'Rubik', sans-serif;
   padding: 10%;
+  @media screen and (max-width: $media-small){
+    font-size: 28px;
+  }
 }
 .sub-title{
   width: 50%;
@@ -37,9 +40,11 @@
   align-items: center;
   overflow: hidden;
   @media screen and (max-width: $media-middle){
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (max-width: $media-small){
+    display: block;
   }
   .sub-title{
     font-size: 60px;
@@ -59,12 +64,20 @@
     font-size: 32px;
     font-style: oblique;
     padding: 2vw;
+    @media screen and (max-width: $media-small){
+      width: auto;
+    }
   }
   & .rigth{
-    width: 600px;
+    width: 40%;
     border-radius: 100px 10px 0 100px;
     box-shadow: 2px 5px 15px $dark-color, inset 2px 5px 60px 3px $white-color;
     padding: 2vw;
+    @media screen and (max-width: $media-middle){
+      width: auto;
+      border-radius: none;
+      box-shadow: none;
+    }
   }
   & .mision{
     margin: 20px;
@@ -106,6 +119,9 @@
       box-shadow: 10px 10px 10px $white-color,
       15px 15px 8px $base-color;
       transition: 0.5s;
+      @media screen and (max-width: $media-small){
+        height: auto;
+      }
       &:hover{
         box-shadow: -5px -5px 12px $white-color,
         5px 5px 12px $white-color,

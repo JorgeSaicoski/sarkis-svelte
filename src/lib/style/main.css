@@ -63,6 +63,11 @@
   font-family: "Rubik", sans-serif;
   padding: 10%;
 }
+@media screen and (max-width: 760px) {
+  .title {
+    font-size: 28px;
+  }
+}
 
 .sub-title {
   width: 50%;
@@ -81,9 +86,13 @@
 }
 @media screen and (max-width: 1200px) {
   #sobre {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  #sobre {
+    display: block;
   }
 }
 #sobre .sub-title {
@@ -100,11 +109,23 @@
   font-style: oblique;
   padding: 2vw;
 }
+@media screen and (max-width: 760px) {
+  #sobre .left {
+    width: auto;
+  }
+}
 #sobre .rigth {
-  width: 600px;
+  width: 40%;
   border-radius: 100px 10px 0 100px;
   box-shadow: 2px 5px 15px #373435, inset 2px 5px 60px 3px #FFFFFF;
   padding: 2vw;
+}
+@media screen and (max-width: 1200px) {
+  #sobre .rigth {
+    width: auto;
+    border-radius: none;
+    box-shadow: none;
+  }
 }
 #sobre .mision, #sobre .vision {
   margin: 20px;
@@ -143,6 +164,11 @@
   font-size: 24px;
   box-shadow: 10px 10px 10px #FFFFFF, 15px 15px 8px #13A9AF;
   transition: 0.5s;
+}
+@media screen and (max-width: 760px) {
+  #sobre .valores .texto {
+    height: auto;
+  }
 }
 #sobre .valores .texto:hover {
   box-shadow: -5px -5px 12px #FFFFFF, 5px 5px 12px #FFFFFF, -5px -5px 12px #13A9AF, 5px 5px 12px #13A9AF;
