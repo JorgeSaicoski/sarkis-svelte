@@ -7,7 +7,6 @@
 
     let dark
     DarkMode.subscribe((mode)=>{
-        console.log(mode)
         dark = mode
     })
     let darkCheck = false
