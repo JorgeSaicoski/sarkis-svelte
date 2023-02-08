@@ -6,6 +6,8 @@
     import Consultoria from "$lib/components/presupuesto/Consultoria.svelte";
     import Login from "$lib/components/presupuesto/Login.svelte";
     import DarkMode from "$lib/store/dark.js";
+    import Cloud from "$lib/components/presupuesto/Cloud.svelte";
+    import Traffic from "$lib/components/presupuesto/Traffic.svelte";
 
     let dark
     DarkMode.subscribe((mode)=>{
@@ -24,17 +26,34 @@
          class:base={dark==="dark"}
 >
 <h1>Calculadora</h1>
-{#if !$Calculadora.tipo}
-    <Tipo></Tipo>
-{:else if $Calculadora.tipo === "blog" || $Calculadora.tipo === "catalago" || $Calculadora.tipo === "portfolio"}
-    <Contact></Contact>
-{:else if $Calculadora.tipo === "ecommerce" }
-    {#if !$Calculadora.eCommerce}
-        <ECommerce></ECommerce>
+{#if !$Calculadora.contact && !$Calculadora.login &&  !$Calculadora.consultoria}
+    {#if !$Calculadora.tipo}
+        <Tipo></Tipo>
+    {:else if $Calculadora.tipo === "blog" || $Calculadora.tipo === "catalago" || $Calculadora.tipo === "portfolio"}
+        <Contact></Contact>
+    {:else if $Calculadora.tipo === "ecommerce" }
+        {#if !$Calculadora.eCommerce}
+            <ECommerce></ECommerce>
+        {:else}
+            <Login></Login>
+        {/if}
     {:else}
-        <Login></Login>
+        <Consultoria></Consultoria>
     {/if}
 {:else}
-    <Consultoria></Consultoria>
+    {#if !$Calculadora.cloud}
+        <Cloud></Cloud>
+    {:else if $Calculadora.cloud === "si"}
+        {#if !$Calculadora.customerTraffic}
+            <Traffic></Traffic>
+        {:else}
+            <h1>Terminó</h1>
+            <p>valor unico</p>
+            <p>valor fijo</p>
+        {/if}
+    {:else}
+        <h1>Terminó</h1>
+        <p>valor unico</p>
+    {/if}
 {/if}
 </section>

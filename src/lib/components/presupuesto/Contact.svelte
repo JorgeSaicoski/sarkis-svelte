@@ -25,7 +25,7 @@
         A dentro del website
     </label>
     <label>
-        <input type="radio" bind:group={contact} value="dataBase">
+        <input type="radio" bind:group={contact} value="none">
         Sin Contacto
     </label>
     <button type="submit">Proximo</button>

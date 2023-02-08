@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Traffic.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Final.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Contact.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Contact.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/eCommerce.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/ECommerce.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/store/calculadora.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/store/calculadora.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/presupuesto/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/presupuesto/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +34,7 @@
         <option value="Login" />
         <option value="Cloud" />
         <option value="traffic" />
+        <option value="Final" />
       </list>
     </option>
   </component>
@@ -103,7 +102,8 @@
       <workItem from="1675633637082" duration="1284000" />
       <workItem from="1675634931751" duration="2000000" />
       <workItem from="1675701048006" duration="10505000" />
-      <workItem from="1675778167640" duration="8281000" />
+      <workItem from="1675778167640" duration="10948000" />
+      <workItem from="1675878769487" duration="385000" />
     </task>
     <servers />
   </component>
