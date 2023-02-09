@@ -177,6 +177,59 @@
   text-align: center;
   font-size: 35px;
 }
+#sobre button {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  font-size: 28px;
+  text-shadow: 6px 2px 3px #373435, 2px 2px 5px #13A9AF;
+  box-shadow: inset 5px 2px 30px 12px #373435, 5px 2px 30px 2px #13A9AF;
+  overflow: hidden;
+  transition: 1s;
+}
+#sobre button .first {
+  position: absolute;
+  top: -15px;
+  left: -50px;
+  transition: 1s;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+}
+#sobre button .second {
+  position: absolute;
+  top: 1px;
+  left: 300px;
+  transition: 1s;
+  z-index: 2;
+}
+#sobre button .background {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  top: -50px;
+  left: -50px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3141631653) 0%, rgba(203, 175, 49, 0.78) 100%);
+  transition: 1s;
+}
+#sobre button:hover .first {
+  position: absolute;
+  top: -150px;
+  left: -100px;
+}
+#sobre button:hover .second {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+#sobre button:hover .background {
+  width: 800px;
+  left: -500px;
+}
 
 .dark {
   background-color: #373435 !important;

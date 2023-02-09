@@ -134,5 +134,61 @@
       }
     }
   }
+  & button{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 28px;
+    text-shadow: 6px 2px 3px $dark-color, 2px 2px 5px $base-color;
+    box-shadow: inset 5px 2px 30px 12px $dark-color,
+    5px 2px 30px 2px $base-color;
+    overflow: hidden;
+    transition: 1s;
+    & .first{
+      position: absolute;
+      top: -15px;
+      left: -50px;
+      transition: 1s;
+      width: 300px;
+      height: 300px;
+      z-index: 2;
+    }
+    & .second{
+      position: absolute;
+      top: 1px;
+      left: 300px;
+      transition: 1s;
+      z-index: 2;
+    }
+    & .background{
+      position: absolute;
+      height: 500px;
+      width: 500px;
+      top:-50px;
+      left: -50px;
+      background: rgb(0,0,0);
+      background: linear-gradient(90deg, rgba(0,0,0,0.31416316526610644) 0%, rgba(203, 175, 49, 0.78) 100%);
+      transition: 1s;
+    }
+    &:hover{
+      & .first{
+        position: absolute;
+        top: -150px;
+        left: -100px;
+      }
+      & .second{
+        position: absolute;
+        top: -15px;
+        left: 10px;
+      }
+      & .background{
+        width: 800px;
+        left: -500px;
+      }
+    }
+  }
 }
 

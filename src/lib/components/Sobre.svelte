@@ -20,7 +20,15 @@
     <h3>Tenga su aplicacion desarrolada por una equipe especializadad en empreendedorismo.</h3>
     <p>Como el tero, el centinela del pampa, estamos siempre atento a las necesidades de nuestros clientes y a las nuevas tecnologias.</p>
 </div>
-<a href="/presupuesto"><button>Presupuesto</button></a><a href="/presupuesto"><button>Contacto</button></a>
+<a href="/presupuesto"><button
+        class:whiteText={dark==="base"}
+        class:baseText={dark==="dark"}
+        class:base={dark==="base"}
+        class:dark={dark==="dark"}
+><p class="first">Presupuesto</p><p class="second">Gratuito</p>
+    <div class="background"></div>
+</button></a>
+<a href="/presupuesto"><button>Contacto</button></a>
 <h2 class="sub-title baseDraw"
     class:whiteText={dark==="base"}
     class:baseText={dark==="dark"}

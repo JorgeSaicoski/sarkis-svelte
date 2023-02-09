@@ -6,7 +6,12 @@
     let stack
 
     if (Calculadora.tipo === "portfolio"){
-        let stack = "Django"
+        stack = "Django"
+        initial = 100
+    }
+
+    if (Calculadora.cloud === "si"){
+        month = 30
     }
 
 
