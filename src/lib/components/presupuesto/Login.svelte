@@ -17,7 +17,7 @@
 </script>
 <form on:submit={submitNext}>
     <label>
-        <input type="radio" bind:group={login} value="none">
+        <input type="radio" bind:group={login} value=false>
         Sin login
     </label>
     <label>

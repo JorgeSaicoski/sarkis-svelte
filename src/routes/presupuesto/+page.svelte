@@ -8,6 +8,7 @@
     import DarkMode from "$lib/store/dark.js";
     import Cloud from "$lib/components/presupuesto/Cloud.svelte";
     import Traffic from "$lib/components/presupuesto/Traffic.svelte";
+    import Final from "$lib/components/presupuesto/Final.svelte";
 
     let dark
     DarkMode.subscribe((mode)=>{
@@ -47,13 +48,10 @@
         {#if !$Calculadora.customerTraffic}
             <Traffic></Traffic>
         {:else}
-            <h1>Terminó</h1>
-            <p>valor unico</p>
-            <p>valor fijo</p>
+            <Final></Final>
         {/if}
     {:else}
-        <h1>Terminó</h1>
-        <p>valor unico</p>
+        <Final></Final>
     {/if}
 {/if}
 </section>
