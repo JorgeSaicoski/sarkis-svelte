@@ -84,7 +84,7 @@
   align-items: center;
   overflow: hidden;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   #sobre {
     justify-content: center;
     align-items: center;
@@ -101,7 +101,11 @@
   font-family: "Rubik", sans-serif;
   transition: 1s;
   width: 100%;
+  letter-spacing: 15px;
   text-shadow: -6px -6px 10px #373435, -5px -5px 5px #373435, -4px -4px 10px #373435, -3px -3px 15px #373435, 6px 6px #373435, 5px 5px #373435, 4px 4px #373435, 3px 3px #373435;
+}
+#sobre .sub-title:hover {
+  letter-spacing: 2px;
 }
 #sobre .left {
   width: 600px;
@@ -120,7 +124,7 @@
   box-shadow: 2px 5px 15px #373435, inset 2px 5px 60px 3px #FFFFFF;
   padding: 2vw;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   #sobre .rigth {
     width: auto;
     border-radius: none;
@@ -331,7 +335,7 @@ nav .logo img {
   width: 250px;
   height: 75px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   nav {
     flex-direction: column;
     justify-content: center;
@@ -345,6 +349,55 @@ nav .logo img {
   nav .links {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+#servicios h2 {
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 15px;
+}
+#servicios .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  margin: auto;
+  width: 1500px;
+}
+#servicios .container div {
+  min-width: 500px;
+  height: 300px;
+}
+#servicios .container div h3 {
+  font-size: 36px;
+}
+#servicios .container divp {
+  font-size: 26px;
+  text-indent: 26px;
+}
+@media screen and (max-width: 1400px) {
+  #servicios .container {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #servicios .container {
+    width: 800px;
+  }
+  #servicios .container div {
+    min-width: 350px;
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 760px) {
+  #servicios .container {
+    width: 700px;
+  }
+  #servicios .container div {
+    min-width: 300px;
   }
 }
 
@@ -494,6 +547,10 @@ body > div {
     width: 600px;
     top: 0;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

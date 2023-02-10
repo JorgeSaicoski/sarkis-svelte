@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/style/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/style/_servicios.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Servicios.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Servicios.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/style/_effects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_effects.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/style/_sobre.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_sobre.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +108,7 @@
       <workItem from="1675778167640" duration="10948000" />
       <workItem from="1675878769487" duration="1277000" />
       <workItem from="1675955834191" duration="12919000" />
-      <workItem from="1676044406633" duration="1051000" />
+      <workItem from="1676044406633" duration="4552000" />
     </task>
     <servers />
   </component>

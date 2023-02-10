@@ -52,11 +52,15 @@
     font-family: 'Rubik', sans-serif;
     transition: 1s;
     width: 100%;
+    letter-spacing: 15px;
     text-shadow:
             -6px -6px 10px $dark-color, -5px -5px 5px $dark-color,
             -4px -4px 10px $dark-color, -3px -3px 15px $dark-color,
             6px 6px $dark-color, 5px 5px $dark-color,
-            4px 4px $dark-color, 3px 3px $dark-color
+            4px 4px $dark-color, 3px 3px $dark-color;
+    &:hover{
+      letter-spacing: 2px;
+    }
   }
 
   & .left{

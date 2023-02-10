@@ -1,0 +1,51 @@
+#servicios{
+  h2{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 15px;
+  }
+  & .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin: auto;
+    width: 1500px;
+    & div{
+      min-width: 500px;
+      height: 300px;
+      & h3{
+        font-size: 36px;
+      }
+      &p{
+        font-size: 26px;
+        text-indent: 26px;
+      }
+    }
+  }
+  @media screen and (max-width: $media-middle){
+    & .container{
+      width: 1000px;
+    }
+
+  }
+  @media screen and (max-width: $media-middle-small){
+    & .container{
+      width: 800px;
+      & div{
+        min-width: 350px;
+        margin: 0 50px;
+      }
+    }
+  }
+  @media screen and (max-width: $media-small){
+    & .container{
+      width: 700px;
+      & div{
+        min-width: 300px;
+      }
+    }
+  }
+}
