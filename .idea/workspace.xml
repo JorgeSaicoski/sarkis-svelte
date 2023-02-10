@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/style/_nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Consultoria.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Consultoria.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Final.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Final.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Login.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Login.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/presupuesto/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/presupuesto/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Servicios.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Servicios.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Sobre.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/_effects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_effects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/_sobre.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_sobre.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +30,6 @@
         <option value="Servicios" />
         <option value="Vantajas" />
         <option value="Asociacion" />
-        <option value="SCSS File" />
         <option value="dark" />
         <option value="Tipo" />
         <option value="JavaScript File" />
@@ -36,6 +40,7 @@
         <option value="Cloud" />
         <option value="traffic" />
         <option value="Final" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -105,7 +110,8 @@
       <workItem from="1675701048006" duration="10505000" />
       <workItem from="1675778167640" duration="10948000" />
       <workItem from="1675878769487" duration="1277000" />
-      <workItem from="1675955834191" duration="6203000" />
+      <workItem from="1675955834191" duration="12919000" />
+      <workItem from="1676044406633" duration="1051000" />
     </task>
     <servers />
   </component>

@@ -28,7 +28,14 @@
 ><p class="first">Presupuesto</p><p class="second">Gratuito</p>
     <div class="background"></div>
 </button></a>
-<a href="/presupuesto"><button>Contacto</button></a>
+<a href="/presupuesto"><button
+        class:whiteText={dark==="base"}
+        class:baseText={dark==="dark"}
+        class:base={dark==="base"}
+        class:dark={dark==="dark"}
+><p class="first">Contacto</p><p class="second">Desarrollar</p>
+    <div class="background"></div>
+</button></a>
 <h2 class="sub-title baseDraw"
     class:whiteText={dark==="base"}
     class:baseText={dark==="dark"}

@@ -12,6 +12,9 @@
 
 
 </script>
+<svelte:head>
+    <title>SARKIS DEV desarrollo web</title>
+</svelte:head>
 
 <section id="sobre"
          class:white={dark==="base"}
@@ -19,9 +22,20 @@
 >
     <Sobre></Sobre>
 </section>
-<div>
-    <p>Haga un <a href="/presupuesto">PRESUPUESTO</a> de tu aplicacion sin compromiso!</p>
-    <p>Y decidas si deseas entrar en <a>contacto!</a></p>
+<div class="call"
+     class:base={dark==="base"}
+     class:dark={dark==="dark"}
+     class:darkText={dark==="base"}
+     class:whiteText={dark==="dark"}
+>
+    <p class="presupuesto">Haga un <a href="/presupuesto"
+                                      class:white={dark==="base"}
+                                      class:base={dark==="dark"}
+    >PRESUPUESTO</a> de tu aplicacion sin compromiso!</p>
+    <p class="contact">Y decidas si deseas entrar en <a
+            class:white={dark==="base"}
+            class:base={dark==="dark"}
+    >CONTACTO!</a></p>
 </div>
 <section id="servicios"
          class:white={dark==="base"}

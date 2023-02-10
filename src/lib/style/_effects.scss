@@ -31,3 +31,40 @@
     scale: 1;
   }
 }
+
+@keyframes left-to-rigth {
+  0%{
+    left: -100%;
+  }
+  90%{
+    left: 190%;
+  }
+  97.5%{
+    left:200%;
+    opacity: 0;
+  }
+  100%{
+    left:200%;
+    opacity: 0;
+  }
+}
+@keyframes focus {
+ 0%{
+    box-shadow: -5px -5px 12px $white-color,
+    5px 5px 12px $white-color,
+    -5px -5px 12px $base-color,
+    5px 5px 12px $base-color;
+  }
+  75%{
+    box-shadow: -5px -5px 24px $dark-color,
+    5px 5px 24px $white-color,
+    -5px -5px 24px $base-color,
+    5px 5px 24px $base-color;
+  }
+  100%{
+    box-shadow: -5px -5px 12px $white-color,
+    5px 5px 12px $white-color,
+    -5px -5px 12px $base-color,
+    5px 5px 12px $base-color;
+  }
+}

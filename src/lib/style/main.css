@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Rubik:wght@600&display=swap");
 .dark {
   background-color: #373435;
 }
@@ -157,13 +157,27 @@
 }
 #sobre .valores .texto {
   width: 400px;
-  height: 400px;
+  height: 500px;
   padding: 1vw;
   margin: 30px;
   border-radius: 35px;
   font-size: 24px;
   box-shadow: 10px 10px 10px #FFFFFF, 15px 15px 8px #13A9AF;
   transition: 0.5s;
+  animation-name: focus;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#sobre .valores .texto:nth-child(1) {
+  animation-delay: 0.25s;
+}
+#sobre .valores .texto:nth-child(2) {
+  animation-delay: 0.5s;
+}
+#sobre .valores .texto:nth-child(3) {
+  animation-delay: 0.75s;
 }
 @media screen and (max-width: 760px) {
   #sobre .valores .texto {
@@ -171,6 +185,7 @@
   }
 }
 #sobre .valores .texto:hover {
+  animation-play-state: revert;
   box-shadow: -5px -5px 12px #FFFFFF, 5px 5px 12px #FFFFFF, -5px -5px 12px #13A9AF, 5px 5px 12px #13A9AF;
 }
 #sobre .valores .texto h3 {
@@ -223,71 +238,12 @@
 }
 #sobre button:hover .second {
   position: absolute;
-  top: -15px;
-  left: 10px;
+  top: -20px;
+  left: 15px;
 }
 #sobre button:hover .background {
   width: 800px;
   left: -500px;
-}
-
-.dark {
-  background-color: #373435 !important;
-}
-
-@keyframes titleEffect {
-  0% {
-    background-position-x: 0;
-    background-position-y: 0;
-  }
-  50% {
-    background-position-x: 200%;
-    background-position-y: 100%;
-  }
-  100% {
-    background-position-x: 50%;
-    background-position-y: 0;
-  }
-}
-@keyframes bg-move {
-  0% {
-    background-position-x: 0;
-  }
-  50% {
-    background-position-x: 10000px;
-  }
-  100% {
-    background-position-x: 20000px;
-  }
-}
-@keyframes heart {
-  0% {
-    scale: 0.85;
-  }
-  50% {
-    scale: 0.95;
-  }
-  100% {
-    scale: 1;
-  }
-}
-nav, footer {
-  display: flex;
-}
-
-input[type=checkbox]:checked + label {
-  align-items: flex-end;
-  transition: 0.3s;
-  background-color: #13A9AF;
-  box-shadow: inset 3px 2px 10px 2px #373435;
-}
-input[type=checkbox]:checked + label img {
-  position: absolute;
-  top: 2.5px;
-  left: 70px;
-  background-color: #FFFFFF;
-  box-shadow: inset 3px 2px 10px 2px #373435;
-  transition: 0.5s;
 }
 
 nav {
@@ -392,9 +348,104 @@ nav .logo img {
   }
 }
 
+.dark {
+  background-color: #373435 !important;
+}
+
+@keyframes titleEffect {
+  0% {
+    background-position-x: 0;
+    background-position-y: 0;
+  }
+  50% {
+    background-position-x: 200%;
+    background-position-y: 100%;
+  }
+  100% {
+    background-position-x: 50%;
+    background-position-y: 0;
+  }
+}
+@keyframes bg-move {
+  0% {
+    background-position-x: 0;
+  }
+  50% {
+    background-position-x: 10000px;
+  }
+  100% {
+    background-position-x: 20000px;
+  }
+}
+@keyframes heart {
+  0% {
+    scale: 0.85;
+  }
+  50% {
+    scale: 0.95;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes left-to-rigth {
+  0% {
+    left: -100%;
+  }
+  90% {
+    left: 190%;
+  }
+  97.5% {
+    left: 200%;
+    opacity: 0;
+  }
+  100% {
+    left: 200%;
+    opacity: 0;
+  }
+}
+@keyframes focus {
+  0% {
+    box-shadow: -5px -5px 12px #FFFFFF, 5px 5px 12px #FFFFFF, -5px -5px 12px #13A9AF, 5px 5px 12px #13A9AF;
+  }
+  75% {
+    box-shadow: -5px -5px 24px #373435, 5px 5px 24px #FFFFFF, -5px -5px 24px #13A9AF, 5px 5px 24px #13A9AF;
+  }
+  100% {
+    box-shadow: -5px -5px 12px #FFFFFF, 5px 5px 12px #FFFFFF, -5px -5px 12px #13A9AF, 5px 5px 12px #13A9AF;
+  }
+}
+nav, footer {
+  display: flex;
+}
+
+h2, h3 {
+  font-family: "Lobster";
+}
+
+p, a {
+  font-family: "Righteous";
+}
+
+input[type=checkbox]:checked + label {
+  align-items: flex-end;
+  transition: 0.3s;
+  background-color: #13A9AF;
+  box-shadow: inset 3px 2px 10px 2px #373435;
+}
+input[type=checkbox]:checked + label img {
+  position: absolute;
+  top: 2.5px;
+  left: 70px;
+  background-color: #FFFFFF;
+  box-shadow: inset 3px 2px 10px 2px #373435;
+  transition: 0.5s;
+}
+
 section {
   min-height: 100vh;
   transition: 2s;
+  padding: 5vh 0;
 }
 
 body {
@@ -405,6 +456,44 @@ body {
 }
 body > div {
   scroll-snap-align: start none;
+}
+
+.call {
+  font-size: 36px;
+  padding: 10vh 2vw;
+  position: relative;
+  overflow: hidden;
+}
+.call:hover .presupuesto, .call:hover .contact {
+  animation-play-state: paused;
+}
+.call a {
+  font-size: 42px;
+  color: #fddc1d;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+}
+.call .presupuesto, .call .contact {
+  width: 1000px;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  left: -200%;
+  animation-name: left-to-rigth;
+  animation-duration: 16s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.call .contact {
+  animation-delay: 6s;
+}
+@media screen and (max-width: 760px) {
+  .call .contact, .call .presupuesto {
+    width: 600px;
+    top: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
