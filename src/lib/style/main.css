@@ -313,6 +313,7 @@ nav .links div {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition: 0.3s;
 }
 nav .links div a {
   display: flex;
@@ -378,6 +379,7 @@ nav .logo img {
   padding: 15px;
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
 }
 #servicios .container div h3 {
   font-size: 36px;
@@ -394,9 +396,39 @@ nav .logo img {
 }
 #servicios .container .hiddenLeft {
   left: -75%;
+  opacity: 0;
 }
 #servicios .container .hiddenRigth {
   left: 150%;
+  opacity: 0;
+}
+#servicios .container .previous {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  width: 5%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#servicios .container .previous img {
+  width: 100%;
+}
+#servicios .container .next {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 5%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#servicios .container .next img {
+  width: 100%;
 }
 @media screen and (max-width: 1400px) {
   #servicios .container {

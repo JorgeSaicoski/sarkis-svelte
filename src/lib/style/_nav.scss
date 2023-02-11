@@ -59,6 +59,7 @@ nav{
       justify-content: center;
       align-items: center;
       overflow: hidden;
+      transition: 0.3s;
       & a {
         display: flex;
         flex-direction: column;
