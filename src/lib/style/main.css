@@ -63,7 +63,7 @@
   font-family: "Rubik", sans-serif;
   padding: 10%;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   .title {
     font-size: 28px;
   }
@@ -90,7 +90,7 @@
     align-items: center;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   #sobre {
     display: block;
   }
@@ -113,7 +113,7 @@
   font-style: oblique;
   padding: 2vw;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   #sobre .left {
     width: auto;
   }
@@ -183,7 +183,7 @@
 #sobre .valores .texto:nth-child(3) {
   animation-delay: 0.75s;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   #sobre .valores .texto {
     height: auto;
   }
@@ -345,7 +345,7 @@ nav .logo img {
     width: 100%;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   nav .links {
     width: 100%;
     flex-direction: column;
@@ -366,10 +366,18 @@ nav .logo img {
   overflow-x: hidden;
   margin: auto;
   width: 1500px;
+  position: relative;
+  height: 500px;
 }
 #servicios .container div {
+  position: absolute;
   min-width: 500px;
   height: 300px;
+  border-radius: 50px;
+  top: 5%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 #servicios .container div h3 {
   font-size: 36px;
@@ -377,6 +385,18 @@ nav .logo img {
 #servicios .container divp {
   font-size: 26px;
   text-indent: 26px;
+}
+#servicios .container .activeLeft {
+  left: 5%;
+}
+#servicios .container .activeRigth {
+  left: 60%;
+}
+#servicios .container .hiddenLeft {
+  left: -75%;
+}
+#servicios .container .hiddenRigth {
+  left: 150%;
 }
 @media screen and (max-width: 1400px) {
   #servicios .container {
@@ -392,12 +412,14 @@ nav .logo img {
     margin: 0 50px;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   #servicios .container {
+    height: auto;
     width: 700px;
   }
   #servicios .container div {
-    min-width: 300px;
+    min-width: 80vw;
+    height: auto;
   }
 }
 
@@ -496,7 +518,6 @@ input[type=checkbox]:checked + label img {
 }
 
 section {
-  min-height: 100vh;
   transition: 2s;
   padding: 5vh 0;
 }
@@ -542,7 +563,7 @@ body > div {
 .call .contact {
   animation-delay: 6s;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   .call .contact, .call .presupuesto {
     width: 600px;
     top: 0;

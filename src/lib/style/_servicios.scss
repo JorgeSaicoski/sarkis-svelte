@@ -13,9 +13,17 @@
     overflow-x: hidden;
     margin: auto;
     width: 1500px;
+    position: relative;
+    height: 500px;
     & div{
+      position: absolute;
       min-width: 500px;
       height: 300px;
+      border-radius: 50px;
+      top:5%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
       & h3{
         font-size: 36px;
       }
@@ -24,6 +32,19 @@
         text-indent: 26px;
       }
     }
+    & .activeLeft{
+      left: 5%;
+    }
+    & .activeRigth{
+      left: 60%;
+    }
+    & .hiddenLeft{
+      left: -75%;
+    }
+    & .hiddenRigth{
+      left: 150%;
+    }
+
   }
   @media screen and (max-width: $media-middle){
     & .container{
@@ -42,9 +63,11 @@
   }
   @media screen and (max-width: $media-small){
     & .container{
+      height: auto;
       width: 700px;
       & div{
-        min-width: 300px;
+        min-width: 80vw;
+        height: auto;
       }
     }
   }
