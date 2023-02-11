@@ -95,7 +95,15 @@
   @media screen and (max-width: $media-middle){
     & .container{
       width: 1000px;
+      & .activeLeft{
+        left: 15%;
+      }
+      & .activeRigth{
+        left: 150%;
+        opacity: 0;
+      }
     }
+
 
   }
   @media screen and (max-width: $media-middle-small){

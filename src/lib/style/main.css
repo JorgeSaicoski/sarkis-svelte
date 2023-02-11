@@ -450,6 +450,13 @@ nav .logo img {
   #servicios .container {
     width: 1000px;
   }
+  #servicios .container .activeLeft {
+    left: 15%;
+  }
+  #servicios .container .activeRigth {
+    left: 150%;
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 1050px) {
   #servicios .container {

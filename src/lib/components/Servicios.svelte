@@ -36,7 +36,10 @@
 </script>
 
 <h2>Servicios</h2>
-<div class="container">
+<div class="container"
+     class:whiteText={dark==="base"}
+     class:baseText={dark==="dark"}
+>
     <span class="background"
           class:dark={dark==="base"}
           class:white={dark==="dark"}
@@ -77,7 +80,8 @@
             class:dark={dark==="dark"}
     >
         <h3>Despliegue de Aplicaciones</h3>
-        <p></p>
+        <p>Tenes una aplicacion y necesitas ayuda para despegarla?</p>
+        <p>Te ayudamos a dejar tu app online con las mejores herramientas disponibles.</p>
     </div>
     <div
             class:activeLeft={position===4}
@@ -88,7 +92,8 @@
             class:dark={dark==="dark"}
     >
         <h3>Desarrollo de Empreendedorismo</h3>
-        <p></p>
+        <p>Queres empreender o ya tiene una empresa y necesitas ayuda para crecer?</p>
+        <p>Ayudamos a analisar el mercado y tu producto. Ademas de crear una app especifica para ti.</p>
     </div>
     <div
             class:activeLeft={position===5}
@@ -104,11 +109,11 @@
 </div>
 
 
-<button  on:click={()=>{activePosition(1)}}>1</button>
-<button on:click={()=>{activePosition(2)}}>2</button>
-<button on:click={()=>{activePosition(3)}}>3</button>
-<button on:click={()=>{activePosition(4)}}>4</button>
-<button on:click={()=>{activePosition(5)}}>5</button>
+<button  on:click={()=>{activePosition(1)}}>Portfolio</button>
+<button on:click={()=>{activePosition(2)}}>Aplicaciones</button>
+<button on:click={()=>{activePosition(3)}}>Despliegue</button>
+<button on:click={()=>{activePosition(4)}}>Empreendedorismo</button>
+<button on:click={()=>{activePosition(5)}}>eCommerce</button>
 
 
 
