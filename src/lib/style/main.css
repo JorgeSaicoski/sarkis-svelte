@@ -375,7 +375,7 @@ nav .logo img {
   min-width: 500px;
   height: 300px;
   border-radius: 50px;
-  top: 5%;
+  top: 7.5%;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -412,11 +412,27 @@ nav .logo img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+  opacity: 0.8;
+  border: none;
+  border-radius: 20px 0 0 20px;
 }
 #servicios .container .previous img {
   width: 100%;
 }
+#servicios .container .background {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  z-index: 0;
+  height: 350px;
+  border-radius: 20px;
+}
 #servicios .container .next {
+  border-radius: 0 20px 20px 0;
+  border: none;
+  z-index: 2;
+  opacity: 0.8;
   position: absolute;
   right: 0;
   top: 5%;

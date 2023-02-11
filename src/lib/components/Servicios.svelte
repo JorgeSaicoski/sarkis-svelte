@@ -8,8 +8,26 @@
     })
     let position = 1
     function activePosition(n){
-        position = n
-        console.log(n)
+        if (position !== n){
+            next()
+            setTimeout(() => {
+                activePosition(n)
+            }, 300)
+        }
+    }
+    function next(){
+        if (position < 5){
+            position ++
+        } else {
+            position = 1
+        }
+    }
+    function previous(){
+        if (position > 1){
+            position --
+        } else {
+            position = 5
+        }
     }
 
 
@@ -19,8 +37,12 @@
 
 <h2>Servicios</h2>
 <div class="container">
-    <button class="previous"><img src="{logo}"></button>
-    <button class="next"><img src="{logo}"></button>
+    <span class="background"
+          class:dark={dark==="base"}
+          class:white={dark==="dark"}
+    ></span>
+    <button class="previous" on:click={previous}><img src="{logo}"></button>
+    <button class="next" on:click={next}><img src="{logo}"></button>
     <div
             class:activeLeft={position===1}
             class:activeRigth={position===2}
