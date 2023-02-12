@@ -353,6 +353,45 @@ nav .logo img {
   }
 }
 
+#servicios .buttones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 2vw;
+}
+#servicios .buttones button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 35px;
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  border: 2px solid #373435;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+#servicios .buttones button .span-text {
+  left: 10% !important;
+  width: auto;
+  height: auto;
+  opacity: 0;
+}
+#servicios .buttones button span {
+  position: absolute;
+  left: 110%;
+  width: 220px;
+  height: 35px;
+  border-radius: 500px;
+  transition: 0.75s;
+}
+#servicios .buttones button:hover span {
+  left: -5%;
+}
+#servicios .buttones button:hover .span-text {
+  opacity: 1;
+}
 #servicios h2 {
   font-size: 60px;
   width: 100%;

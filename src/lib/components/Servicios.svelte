@@ -108,12 +108,79 @@
     </div>
 </div>
 
+<div class="buttones">
+    <button on:click={()=>{activePosition(1)}}
+            class:white={dark==="base"}
+            class:dark={dark==="dark"}
+            class:darkText={dark==="base"}
+            class:whiteText={dark==="dark"}
+    ><p>Portfolio</p><span
+            class:dark={dark==="base"}
+            class:white={dark==="dark"}
+    ></span>
+        <span class="span-text"
+                class:whiteText={dark==="base"}
+                class:darkText={dark==="dark"}
+        >Conocer</span>
+    </button>
+    <button on:click={()=>{activePosition(2)}}
+            class:white={dark==="base"}
+            class:dark={dark==="dark"}
+            class:darkText={dark==="base"}
+            class:whiteText={dark==="dark"}
+    ><p>Aplicaciones</p><span
+            class:dark={dark==="base"}
+            class:white={dark==="dark"}
+    ></span>
+        <span class="span-text"
+              class:whiteText={dark==="base"}
+              class:darkText={dark==="dark"}
+        >Conocer</span>
+    </button>
+    <button on:click={()=>{activePosition(3)}}
+            class:white={dark==="base"}
+            class:dark={dark==="dark"}
+            class:darkText={dark==="base"}
+            class:whiteText={dark==="dark"}
+    ><p>Despliegue</p><span
+            class:dark={dark==="base"}
+            class:white={dark==="dark"}
+    ></span>
+        <span class="span-text"
+              class:whiteText={dark==="base"}
+              class:darkText={dark==="dark"}
+        >Conocer</span>
+    </button>
+    <button on:click={()=>{activePosition(4)}}
+            class:white={dark==="base"}
+            class:dark={dark==="dark"}
+            class:darkText={dark==="base"}
+            class:whiteText={dark==="dark"}
+    ><p>Empreendedorismo</p><span
+            class:dark={dark==="base"}
+            class:white={dark==="dark"}
+    ></span>
+        <span class="span-text"
+              class:whiteText={dark==="base"}
+              class:darkText={dark==="dark"}
+        >Conocer</span>
+    </button>
+    <button on:click={()=>{activePosition(5)}}
+            class:white={dark==="base"}
+            class:dark={dark==="dark"}
+            class:darkText={dark==="base"}
+            class:whiteText={dark==="dark"}
+    ><p>eCommerce</p><span
+            class:dark={dark==="base"}
+            class:white={dark==="dark"}
+    ></span>
+        <span class="span-text"
+              class:whiteText={dark==="base"}
+              class:darkText={dark==="dark"}
+        >Conocer</span>
+    </button>
+</div>
 
-<button  on:click={()=>{activePosition(1)}}>Portfolio</button>
-<button on:click={()=>{activePosition(2)}}>Aplicaciones</button>
-<button on:click={()=>{activePosition(3)}}>Despliegue</button>
-<button on:click={()=>{activePosition(4)}}>Empreendedorismo</button>
-<button on:click={()=>{activePosition(5)}}>eCommerce</button>
 
 
 
