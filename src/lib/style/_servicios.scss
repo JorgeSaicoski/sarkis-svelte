@@ -158,11 +158,18 @@
   }
   @media screen and (max-width: $media-small){
     & .container{
-      height: auto;
-      width: 700px;
+      width: 500px;
+      & .background{
+        height: 400px;
+      }
+      & .next, .previous{
+        height: 400px;
+      }
       & div{
-        min-width: 80vw;
         height: auto;
+      }
+      & .activeLeft{
+        left: -5%;
       }
     }
   }

@@ -508,12 +508,19 @@ nav .logo img {
 }
 @media screen and (max-width: 820px) {
   #servicios .container {
-    height: auto;
-    width: 700px;
+    width: 500px;
+  }
+  #servicios .container .background {
+    height: 400px;
+  }
+  #servicios .container .next, #servicios .container .previous {
+    height: 400px;
   }
   #servicios .container div {
-    min-width: 80vw;
     height: auto;
+  }
+  #servicios .container .activeLeft {
+    left: -5%;
   }
 }
 

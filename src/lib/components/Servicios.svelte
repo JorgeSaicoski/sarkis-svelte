@@ -7,13 +7,26 @@
         dark = mode
     })
     let position = 1
-    function activePosition(n){
-        if (position !== n){
+    function activePosition(n, goto=null){
+        console.log(goto)
+        let check = n -position
+        console.log(check)
+        if(goto&&goto==="previos"&&position !== n){
+            previous()
+            setTimeout(() => {
+                activePosition(n, "previos")
+            }, 300)
+        }else if (goto&&goto==="next"&&position !== n){
             next()
             setTimeout(() => {
-                activePosition(n)
+                activePosition(n, "next")
             }, 300)
+        }else if(position !== n){
+            check===-1||check===-2||check===4||check===3?activePosition(n, "previos"):activePosition(n, "next")
         }
+
+
+
     }
     function next(){
         if (position < 5){
