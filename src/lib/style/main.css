@@ -368,7 +368,7 @@ nav .logo img {
   font-size: 15px;
   font-family: "Rubik", sans-serif;
   border: 2px solid #373435;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
   position: relative;
   overflow: hidden;
 }
@@ -380,11 +380,15 @@ nav .logo img {
 }
 #servicios .buttones button span {
   position: absolute;
-  left: 110%;
+  left: 80%;
   width: 220px;
   height: 35px;
-  border-radius: 500px;
+  border-radius: 20px;
   transition: 0.75s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 #servicios .buttones button:hover span {
   left: -5%;

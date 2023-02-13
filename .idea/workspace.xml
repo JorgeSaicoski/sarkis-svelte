@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/lib/components/Servicios.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Servicios.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/_servicios.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_servicios.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,8 @@
       <workItem from="1675878769487" duration="1277000" />
       <workItem from="1675955834191" duration="12919000" />
       <workItem from="1676044406633" duration="15407000" />
-      <workItem from="1676240148338" duration="4073000" />
+      <workItem from="1676240148338" duration="4457000" />
+      <workItem from="1676299735437" duration="333000" />
     </task>
     <servers />
   </component>
