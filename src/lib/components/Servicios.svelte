@@ -115,7 +115,8 @@
             class:dark={dark==="dark"}
     >
         <h3>eCommerce</h3>
-        <p></p>
+        <p>Necesitas vender online? Queres estar en Google Maps?</p>
+        <p>La mejor manera es teniendo tu propria tienda integrada con las plataformas mas utilizadas de Uruguay.</p>
     </div>
 </div>
 

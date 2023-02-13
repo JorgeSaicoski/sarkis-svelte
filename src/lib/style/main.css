@@ -380,7 +380,7 @@ nav .logo img {
 }
 #servicios .buttones button span {
   position: absolute;
-  left: 80%;
+  left: 85%;
   width: 220px;
   height: 35px;
   border-radius: 20px;
@@ -502,6 +502,12 @@ nav .logo img {
   }
 }
 @media screen and (max-width: 1050px) {
+  #servicios .buttones {
+    flex-wrap: wrap;
+  }
+  #servicios .buttones button {
+    margin: 15px;
+  }
   #servicios .container {
     width: 800px;
   }

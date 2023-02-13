@@ -24,7 +24,7 @@
       }
       & span{
         position: absolute;
-        left: 80%;
+        left: 85%;
         width: 220px;
         height: 35px;
         border-radius: 20px;
@@ -152,6 +152,12 @@
 
   }
   @media screen and (max-width: $media-middle-small){
+    & .buttones{
+      flex-wrap: wrap;
+      & button{
+        margin: 15px;
+      }
+    }
     & .container{
       width: 800px;
       & div{
