@@ -57,8 +57,11 @@
 
 
 <div>
-    <div>
-        
+    <div class="presupuesto-value">
+        <p>La prevision del costo para produccion de tu aplicacion es {initial}USD</p>
+        {#if month}
+            <p>Y el valor de manutencion es {month}</p>
+        {/if}
     </div>
     <h3>Tecnologias que vamos utilizar:</h3>
     {#each stacks as stack, i}
