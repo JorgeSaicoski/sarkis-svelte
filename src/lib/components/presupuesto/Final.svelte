@@ -50,6 +50,17 @@
             obs.push("Debemos estudiar el caso para saber la mejor solucion estructural.")
         }
     }
+    function resetCalculadora(){
+        Calculadora.set({
+            tipo: null,
+            contact: null,
+            eCommerce: null,
+            consultoria: null,
+            login: null,
+            cloud: null,
+            customerTraffic: null
+        })
+    }
 
 
 
@@ -95,4 +106,5 @@
             <p>Django solo es una gran herramienta. Pero es mas poderosa con una tecnologia de FrontEnd.</p>
         {/if}
     {/each}
+    <button on:click={resetCalculadora}>Nuevo Calculo</button>
 </div>
