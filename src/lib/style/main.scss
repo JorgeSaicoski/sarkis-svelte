@@ -3,23 +3,47 @@
 @import 'sobre';
 @import 'nav';
 @import 'servicios';
+@import 'vantajas';
 @import 'effects';
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Righteous&family=Rubik:wght@600&display=swap');
 
 
 
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: 20px;
+    border: solid 2px $background-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
 
 nav, footer{
   display: flex;
 }
 h2, h3{
-  font-family: 'Lobster';
+  font-family: 'Lobster', serif;
 }
 p, a{
-  font-family: 'Righteous';
+  font-family: 'Righteous', cursive;
 }
 
 
@@ -45,6 +69,7 @@ section{
 }
 
 body{
+  @include scrollbars(10px, $dark-color, $base-color);
   margin: 0;
   display: flex;
   flex-direction: column;

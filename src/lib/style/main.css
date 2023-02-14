@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Rubik:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Righteous&family=Rubik:wght@600&display=swap");
 .dark {
   background-color: #373435;
 }
@@ -470,6 +470,7 @@ nav .logo img {
   z-index: 0;
   height: 350px;
   border-radius: 20px;
+  opacity: 0.8;
 }
 #servicios .container .next {
   border-radius: 0 20px 20px 0;
@@ -532,6 +533,24 @@ nav .logo img {
   #servicios .container .activeLeft {
     left: -5%;
   }
+}
+
+#vantajas {
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+#vantajas h2 {
+  font-size: 52px;
+  text-shadow: #13A9AF 6px 5px 2px, #373435 2px 4px 5px, #373435 6px 4px 2px, #13A9AF 4px 5px 5px;
+}
+#vantajas h5 {
+  font-size: 32px;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: #FFFFFF 0 0 20px, #13A9AF 2px 4px 5px, #13A9AF 6px 4px 2px;
+}
+#vantajas p {
+  font-size: 28px;
 }
 
 .dark {
@@ -606,11 +625,11 @@ nav, footer {
 }
 
 h2, h3 {
-  font-family: "Lobster";
+  font-family: "Lobster", serif;
 }
 
 p, a {
-  font-family: "Righteous";
+  font-family: "Righteous", cursive;
 }
 
 input[type=checkbox]:checked + label {
@@ -638,6 +657,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #373435;
+  border-radius: 20px;
+  border: solid 2px #13A9AF;
+}
+body::-webkit-scrollbar-track {
+  background: #13A9AF;
+}
+body {
+  scrollbar-face-color: #373435;
+  scrollbar-track-color: #13A9AF;
 }
 body > div {
   scroll-snap-align: start none;

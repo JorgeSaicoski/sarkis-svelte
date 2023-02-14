@@ -1,0 +1,25 @@
+#vantajas{
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  & h2{
+    font-size: 52px;
+    text-shadow:
+    $base-color 6px 5px 2px,
+    $dark-color 2px 4px 5px,
+    $dark-color 6px 4px 2px,
+    $base-color 4px 5px 5px;
+  }
+  & h5{
+    font-size: 32px;
+    font-family: "Permanent Marker", cursive;
+    text-shadow:
+            $white-color 0 0 20px,
+            $base-color 2px 4px 5px,
+            $base-color 6px 4px 2px;
+
+  }
+  & p{
+    font-size: 28px;
+  }
+}

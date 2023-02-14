@@ -46,6 +46,8 @@
 <section id="vantajas"
          class:white={dark==="base"}
          class:base={dark==="dark"}
+         class:darkText={dark==="base"}
+         class:whiteText={dark==="dark"}
 >
     <Vantajas></Vantajas>
 </section>
