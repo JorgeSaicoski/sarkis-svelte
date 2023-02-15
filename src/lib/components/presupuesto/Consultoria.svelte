@@ -1,6 +1,6 @@
 <script>
     import Calculadora from "$lib/store/calculadora.js";
-    let consultoria = $Calculadora.consultoria
+    let consultoria = "app"
 
 
 
@@ -22,4 +22,6 @@
     </label>
     <button type="submit">Proximo</button>
 </form>
-<p>{consultoria}</p>
+<h4>Creamos tu app</h4>
+<p>Si tenes alguna idea de app que pueda ayudar tu empreendimento te ayudamos a concretizarla.</p>
+<p>No dudes en entrar en contacto para hablar mas sobre tu idea.</p>

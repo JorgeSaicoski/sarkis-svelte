@@ -37,6 +37,7 @@
         }
     } else{
         if ($Calculadora.consultoria === "app"){
+            initial = 100
             stacks.push("Svelte", "Nodejs", "Django", "Angular", "React")
         }
     }
@@ -69,9 +70,9 @@
 
 <div>
     <div class="presupuesto-value">
-        <p>La prevision del costo para produccion de tu aplicacion es {initial}USD</p>
+        <p>La prevision del costo para produccion de tu aplicacion es {initial} USD</p>
         {#if month}
-            <p>Y el valor de manutencion es {month}</p>
+            <p>Y el valor de manutencion es {month} USD</p>
         {/if}
     </div>
     <h3>Tecnologias que vamos utilizar:</h3>
