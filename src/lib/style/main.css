@@ -553,6 +553,83 @@ nav .logo img {
   font-size: 28px;
 }
 
+#asociacion h2 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  transition: 1s;
+  letter-spacing: 15px;
+  display: flex;
+  padding: 2vw;
+  box-shadow: 2px 2px 6px 5px #373435, inset 2px 2px 15px 10px #FFFFFF;
+  text-shadow: -4px -2px 10px #373435, -2px -2px 5px #373435, -2px -2px 10px #373435, -3px -3px 15px #373435, 4px 4px #373435, 2px 1px #373435, 2px 2px #373435, 1px 2px #373435;
+}
+#asociacion h2:hover {
+  letter-spacing: 2px;
+}
+#asociacion .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#asociacion .container .card {
+  width: 500px;
+  height: 500px;
+  margin: 2vw;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border: 2px solid #373435;
+  overflow: hidden;
+}
+#asociacion .container .card h3 {
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 28px;
+  border: solid #FFFFFF;
+  border-width: 0 2px;
+  transition: 1s;
+}
+#asociacion .container .card .description {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  z-index: 2;
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#asociacion .container .card .description p {
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  padding: 20px 0;
+}
+#asociacion .container .card img {
+  width: 300px;
+  transition: 1s;
+}
+#asociacion .container .card a {
+  z-index: 5;
+}
+#asociacion .container .card:hover .description {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#asociacion .container .card:hover h3 {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
 .dark {
   background-color: #373435 !important;
 }
