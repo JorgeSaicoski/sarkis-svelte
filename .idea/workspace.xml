@@ -7,9 +7,6 @@
     <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Asociacion.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Asociacion.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Cloud.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Cloud.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Consultoria.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Consultoria.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Final.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Final.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <workItem from="1676044406633" duration="15407000" />
       <workItem from="1676240148338" duration="4457000" />
       <workItem from="1676299735437" duration="12382000" />
-      <workItem from="1676474444723" duration="658000" />
+      <workItem from="1676474444723" duration="1992000" />
     </task>
     <servers />
   </component>
