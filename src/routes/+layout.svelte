@@ -4,6 +4,9 @@
     import logoDark from "$lib/images/logo.png"
     import DarkMode from "$lib/store/dark.js";
     import darkmode from "$lib/images/favigreen.png"
+    import bitcoin from "$lib/images/bitcoin.png"
+    import uruguay from "$lib/images/uruguay-.png"
+    import usa from "$lib/images/usa.png"
 
     let dark
     DarkMode.subscribe((mode)=>{
@@ -63,8 +66,10 @@
 <footer
         class:base={dark==="base"}
         class:dark={dark==="dark"}
+        class:whiteText={dark==="base"}
+        class:baseText={dark==="dark"}
 >
-    <div>
+    <div class="paginas">
         <div>
             <a>Inicio</a>
         </div>
@@ -78,9 +83,16 @@
             <a>Presupuesto</a>
         </div>
     </div>
-    <div>
-        Contato Info
+    <div class="content-media">
+        <a href="mailto: jorge@sarkis.dev">jorge@sarkis.com</a>
+        <a href="https://wa.me/09893309600">(+598)93-309-600</a>
+        <a href="https://www.linkedin.com/in/jorge-saicoski/">GitHub</a>
+        <a href="https://www.linkedin.com/in/jorge-saicoski/">LinkedIn</a>
     </div>
-    <a target="_blank" href="https://icons8.com/">Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+    <a target="_blank" href="https://icons8.com/">Icons by Icons8</a>
+    <div class="payment"><p>Aceptamos <img src="{bitcoin}" alt="Bitcoin"><img src="{uruguay}" alt="Pesos Uruguayos"><img src="{usa}" alt="Dolares"></p></div>
+
+
 </footer>
 

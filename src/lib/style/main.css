@@ -416,6 +416,7 @@ nav .logo img {
 #servicios .container div {
   position: absolute;
   min-width: 500px;
+  max-width: 550px;
   height: 300px;
   border-radius: 50px;
   top: 7.5%;
@@ -463,6 +464,9 @@ nav .logo img {
 #servicios .container .previous img {
   width: 100%;
 }
+#servicios .container .previous:hover {
+  opacity: 1;
+}
 #servicios .container .background {
   position: absolute;
   top: 5%;
@@ -489,6 +493,9 @@ nav .logo img {
 }
 #servicios .container .next img {
   width: 100%;
+}
+#servicios .container .next:hover {
+  opacity: 1;
 }
 @media screen and (max-width: 1400px) {
   #servicios .container {

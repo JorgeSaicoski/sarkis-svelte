@@ -63,6 +63,7 @@
     & div{
       position: absolute;
       min-width: 500px;
+      max-width: 550px;
       height: 300px;
       border-radius: 50px;
       top:7.5%;
@@ -109,6 +110,9 @@
       & img{
         width: 100%;
       }
+      &:hover{
+        opacity: 1;
+      }
     }
     & .background{
       position: absolute;
@@ -135,6 +139,9 @@
       align-items: center;
       & img{
         width: 100%;
+      }
+      &:hover{
+        opacity: 1;
       }
     }
   }

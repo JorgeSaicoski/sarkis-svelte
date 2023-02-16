@@ -1,6 +1,6 @@
 <script>
     import DarkMode from "$lib/store/dark.js";
-    import logo from "$lib/images/favicon.png"
+    import logo from "$lib/images/favigreen.png"
 
     let dark
     DarkMode.subscribe((mode)=>{

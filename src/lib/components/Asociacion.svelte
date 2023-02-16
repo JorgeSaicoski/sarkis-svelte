@@ -1,6 +1,8 @@
 <script>
     import DarkMode from "$lib/store/dark.js";
     import wozcode from "$lib/images/wozcode.png";
+    import devdropper from "$lib/images/devdropper.png";
+    import jorge from "$lib/images/jorge.png";
 
     let dark
     DarkMode.subscribe((mode)=>{
@@ -39,6 +41,7 @@
             class:dark={dark==="base"}
             class:base={dark==="dark"}
         >Dev Dropper</h3>
+        <img src="{devdropper}">
         <div class="description">
             <p>Dev Dropper es una empresa de creacion de pequeños codigos.</p>
             <p>Así pueden crear complejos softwares rapidamente y con calidad, ya que estan pre-armados.</p>
@@ -56,6 +59,7 @@
             class:dark={dark==="base"}
             class:base={dark==="dark"}
         >Jorge Adriano</h3>
+        <img src="{jorge}">
         <div class="description">
             <p>Jorge Adriano es el creador de Sarkis Dev.</p>
             <p>Graduado en administracción, fue tutor de materias de finanzas, hoy trabaja con desarrollo web.</p>
