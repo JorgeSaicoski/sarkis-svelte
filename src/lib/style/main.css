@@ -107,6 +107,11 @@
 #sobre .sub-title:hover {
   letter-spacing: 2px;
 }
+@media screen and (max-width: 500px) {
+  #sobre .sub-title {
+    font-size: 35px;
+  }
+}
 #sobre .left {
   width: 600px;
   font-size: 32px;
@@ -403,6 +408,11 @@ nav .logo img {
   font-family: "Rubik", sans-serif;
   letter-spacing: 15px;
 }
+@media screen and (max-width: 500px) {
+  #servicios h2 {
+    font-size: 35px;
+  }
+}
 #servicios .container {
   display: flex;
   flex-direction: row;
@@ -541,6 +551,30 @@ nav .logo img {
     left: -5%;
   }
 }
+@media screen and (max-width: 500px) {
+  #servicios .container {
+    width: 350px;
+    height: 600px;
+  }
+  #servicios .container .background {
+    height: 550px;
+  }
+  #servicios .container .next, #servicios .container .previous {
+    height: 550px;
+  }
+  #servicios .container div {
+    height: 450px;
+    min-width: 300px;
+    max-width: 350px;
+    width: 300px;
+  }
+  #servicios .container div p {
+    font-size: 15px;
+  }
+  #servicios .container .activeLeft {
+    left: -10%;
+  }
+}
 
 #vantajas {
   padding: 2vw;
@@ -573,6 +607,11 @@ nav .logo img {
 }
 #asociacion h2:hover {
   letter-spacing: 2px;
+}
+@media screen and (max-width: 500px) {
+  #asociacion h2 {
+    font-size: 35px;
+  }
 }
 #asociacion .container {
   display: flex;
@@ -635,6 +674,12 @@ nav .logo img {
   opacity: 0;
   height: 0;
   width: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .dark {

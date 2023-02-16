@@ -50,6 +50,9 @@
     text-align: center;
     font-family: "Rubik", sans-serif;
     letter-spacing: 15px;
+    @media screen and (max-width: $media-xsmall){
+      font-size: 35px;
+    }
   }
   & .container{
     display: flex;
@@ -188,6 +191,30 @@
       }
       & .activeLeft{
         left: -5%;
+      }
+    }
+  }
+  @media screen and (max-width: $media-xsmall){
+    & .container{
+      width: 350px;
+      height: 600px;
+      & .background{
+        height: 550px;
+      }
+      & .next, .previous{
+        height: 550px;
+      }
+      & div{
+        height: 450px;
+        min-width: 300px;
+        max-width: 350px;
+        width: 300px;
+        & p{
+          font-size: 15px;
+        }
+      }
+      & .activeLeft{
+        left: -10%;
       }
     }
   }

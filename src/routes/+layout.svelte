@@ -93,6 +93,5 @@
     <a target="_blank" href="https://icons8.com/">Icons by Icons8</a>
     <div class="payment"><p>Aceptamos <img src="{bitcoin}" alt="Bitcoin"><img src="{uruguay}" alt="Pesos Uruguayos"><img src="{usa}" alt="Dolares"></p></div>
 
-
 </footer>
 

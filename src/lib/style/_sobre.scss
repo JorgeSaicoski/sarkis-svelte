@@ -61,6 +61,9 @@
     &:hover{
       letter-spacing: 2px;
     }
+    @media screen and (max-width: $media-xsmall){
+      font-size: 35px;
+    }
   }
 
   & .left{
