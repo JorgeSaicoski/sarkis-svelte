@@ -70,8 +70,9 @@
         class:baseText={dark==="dark"}
 >
     <div class="paginas">
+        <h5>Empresa</h5>
         <div>
-            <a>Inicio</a>
+            <a>Sobre</a>
         </div>
         <div>
             <a>Servicios</a>
@@ -84,14 +85,14 @@
         </div>
     </div>
     <div class="content-media">
-        <a href="mailto: jorge@sarkis.dev">jorge@sarkis.com</a>
-        <a href="https://wa.me/09893309600">(+598)93-309-600</a>
-        <a href="https://www.linkedin.com/in/jorge-saicoski/">GitHub</a>
-        <a href="https://www.linkedin.com/in/jorge-saicoski/">LinkedIn</a>
+        <h5>Contactos:</h5>
+        <p>Email:<a href="mailto: jorge@sarkis.dev"> jorge@sarkis.com</a></p>
+        <p>Whats App: <a href="https://wa.me/09893309600"> (+598)93-309-600</a></p>
+        <p>Github <a href="https://www.linkedin.com/in/jorge-saicoski/"> GitHub</a></p>
+        <p>LinkedIn <a href="https://www.linkedin.com/in/jorge-saicoski/"> LinkedIn</a></p>
     </div>
-
-    <a target="_blank" href="https://icons8.com/">Icons by Icons8</a>
-    <div class="payment"><p>Aceptamos <img src="{bitcoin}" alt="Bitcoin"><img src="{uruguay}" alt="Pesos Uruguayos"><img src="{usa}" alt="Dolares"></p></div>
+    <div class="payment"><p>Aceptamos:</p> <img src="{bitcoin}" alt="Bitcoin"><img src="{uruguay}" alt="Pesos Uruguayos"><img src="{usa}" alt="Dolares"></div>
+    <a target="_blank" class="icons" href="https://icons8.com/">Icons by Icons8</a>
 
 </footer>
 

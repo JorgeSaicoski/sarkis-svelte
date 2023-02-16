@@ -2,4 +2,34 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 2vw;
+  justify-content: space-around;
+  min-height: 50vh;
+  overflow: hidden;
+  & .paginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 500px;
+    margin: 2vh 0;
+    & h5{
+      font-size: 35px;
+    }
+  }
+  & .content-media{
+    @extend .paginas
+  }
+  & .payment{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+  }
+  & .icons{
+    width: 100%;
+    text-align: left;
+  }
 }

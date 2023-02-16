@@ -680,6 +680,33 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 2vw;
+  justify-content: space-around;
+  min-height: 50vh;
+  overflow: hidden;
+}
+footer .paginas, footer .content-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 500px;
+  margin: 2vh 0;
+}
+footer .paginas h5, footer .content-media h5 {
+  font-size: 35px;
+}
+footer .payment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+footer .icons {
+  width: 100%;
+  text-align: left;
 }
 
 .dark {

@@ -1,6 +1,6 @@
 <script>
     import Calculadora from "$lib/store/calculadora.js";
-    let tipo = $Calculadora.tipo
+    let tipo = "blog"
 
 
 
