@@ -109,7 +109,7 @@
             <p>Django solo es una gran herramienta. Pero es mas poderosa con una tecnologia de FrontEnd.</p>
         {/if}
     {/each}
-    {#if obs}
+    {#if obs.length>0}
         <div>
             <h2>Obs.:</h2>
             {#each obs as obs, i}

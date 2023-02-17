@@ -65,7 +65,13 @@
     </div>
 {:else if tipo==="portfolio"}
     <div class="description">
-        <p>Queres vender online pero querés la libertad de cobrar como quieras?</p>
+        <p>Deseas mostrar tus trabajos para futuros clientes, socios, amigos o familia?</p>
+        <p>La mejor forma de demonstrar que eres confiable y tenes calidad en que haces es con un portfolio.</p>
+        <p>Tendras pagina de administración para agregar, alterar y deletar trabajos. Ademas de poder recebir contactos por ahí.</p>
     </div>
 {:else}
+    <div class="description">
+        <p>Tenes idea de una aplicación o querés ayuda administrativa?</p>
+        <p>Te ayudamos a "bajar a la tierra" tu idea y implementarla de la mejor manera posible.</p>
+    </div>
 {/if}
