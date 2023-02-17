@@ -10,6 +10,7 @@
         stacks.push("Django")
         initial = 50
         if ($Calculadora.contact !== "dataBase"){
+            stacks.push("Django")
             obs.push("Con Django la creacion de una area de contacto es muy facil. Aconsejamos que pongas las dos opciones, contacto a dentro del website y por redes sociales.")
         }
     } else if ($Calculadora.tipo === "catalago"){
@@ -17,6 +18,7 @@
         initial = 30
         if ($Calculadora.contact === "dataBase"){
             stacks.push("NodeJS")
+            console.log(stacks)
             initial = 60
         }
     } else if ($Calculadora.tipo === "ecommerce") {
@@ -48,7 +50,7 @@
             month = 60
         } else if ($Calculadora.customerTraffic === "big"){
             month = null
-            obs.push("Debemos estudiar el caso para saber la mejor solucion estructural.")
+            obs.push("Debemos estudiar el caso para saber la mejor solucion estructural para la cantidad de acesos que requiere la aplicación.")
         }
     }
     function resetCalculadora(){
@@ -93,7 +95,7 @@
             <p>Es mas utilizado que Angular y tambien tiene una alta escalabilidad.</p>
             <p>Aconsejado para aplicaciones que puedan crecer.</p>
         {/if}
-        {#if stack==="Nodejs"}
+        {#if stack==="NodeJS"}
             <h2>NodeJS</h2>
             <p>NodeJS es un backend moderno a donde se puede crear una aplicacion escalable y altamente costumizable.</p>
             <p>Es posible crear una pagina de manutencion donde el cliente pueda alterar la información del website.</p>
@@ -107,5 +109,13 @@
             <p>Django solo es una gran herramienta. Pero es mas poderosa con una tecnologia de FrontEnd.</p>
         {/if}
     {/each}
+    {#if obs}
+        <div>
+            <h2>Obs.:</h2>
+            {#each obs as obs, i}
+                <p>{obs}</p>
+            {/each}
+        </div>
+    {/if}
     <button on:click={resetCalculadora}>Nuevo Calculo</button>
 </div>
