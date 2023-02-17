@@ -7,10 +7,6 @@
     <list default="true" id="21e31262-1a46-43fd-888b-b1c8b7153bbc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/presupuesto/Tipo.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/presupuesto/Tipo.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/style/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/style/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/style/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jorgesaicoski/Documents/Projects/sarkis-svelte/src/lib/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jorgesaicoski/Documents/Devdropper/docker/node/auth-server&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -111,7 +107,9 @@
       <workItem from="1676240148338" duration="4457000" />
       <workItem from="1676299735437" duration="12382000" />
       <workItem from="1676474444723" duration="10542000" />
-      <workItem from="1676568558556" duration="4138000" />
+      <workItem from="1676568558556" duration="4147000" />
+      <workItem from="1676579187417" duration="30000" />
+      <workItem from="1676663392309" duration="1919000" />
     </task>
     <servers />
   </component>

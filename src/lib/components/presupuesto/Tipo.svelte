@@ -42,4 +42,14 @@
     </label>
     <button type="submit">Proximo</button>
 </form>
-<p>{tipo}</p>
+{#if tipo==="blog"}
+    <div class="description">
+        <p>Queres crear contenido con imagenes o informaciones sobre tu negocio?</p>
+        <p>La creacion de un blog te ayudará a mantener tus clientes actualizados.</p>
+    </div>
+{:else if tipo==="catalago"}
+{:else if tipo==="ecommerce"}
+{:else if tipo==="portfolio"}
+{:else if tipo==="completo"}
+{:else}
+{/if}
