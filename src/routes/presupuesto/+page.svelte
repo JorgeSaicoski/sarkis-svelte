@@ -22,11 +22,11 @@
 <svelte:head>
     <title>Calculadora de Presupuesto Web App</title>
 </svelte:head>
-<section class="calculadora"
+<section id="calculadora"
          class:white={dark==="base"}
          class:base={dark==="dark"}
 >
-    <h1>Calculadora</h1>
+    <h1>Presupuesto para creacion de una aplicacion.</h1>
     {#if !$Calculadora.contact && !$Calculadora.login &&  !$Calculadora.consultoria}
         {#if !$Calculadora.tipo}
             <Tipo></Tipo>

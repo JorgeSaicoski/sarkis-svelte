@@ -1,0 +1,68 @@
+#calculadora{
+  padding: 2vw;
+  & h1{
+    font-size: 35px;
+    font-family: 'Lobster', serif;
+  }
+  & label{
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    background: $dark-color;
+    color: $white-color;
+    height: auto;
+    width: 80vw;
+    min-width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    text-align: right;
+  }
+  & form{
+    box-shadow: 0.2em 0.2em 0.2em 0.1em $dark-color inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+input{
+  cursor: pointer;
+  padding: 5px;
+  margin: 25px;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $white-color;
+  font: inherit;
+  color: currentColor;
+  width: 50px;
+  height: 100%;
+  border-radius: 20px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  box-shadow: 1px 1px 5px  $white-color,
+  inset 1px 1px 10px  $dark-color;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 620ms transform ease-in-out;
+  box-shadow: 1px 1px 5px  $white-color,
+  inset 1px 1px 10px  $dark-color;
+  background-color: $base-color;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1.1);
+}
+

@@ -676,6 +676,74 @@ nav .logo img {
   width: 0;
 }
 
+#calculadora {
+  padding: 2vw;
+}
+#calculadora h1 {
+  font-size: 35px;
+  font-family: "Lobster", serif;
+}
+#calculadora label {
+  font-size: 25px;
+  font-family: "Righteous", cursive;
+  background: #373435;
+  color: #FFFFFF;
+  height: auto;
+  width: 80vw;
+  min-width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  text-align: right;
+}
+#calculadora form {
+  box-shadow: 0.2em 0.2em 0.2em 0.1em #373435 inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  cursor: pointer;
+  padding: 5px;
+  margin: 25px;
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #FFFFFF;
+  font: inherit;
+  color: currentColor;
+  width: 50px;
+  height: 100%;
+  border-radius: 20px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  box-shadow: 1px 1px 5px #FFFFFF, inset 1px 1px 10px #373435;
+}
+
+input[type=radio]::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 620ms transform ease-in-out;
+  box-shadow: 1px 1px 5px #FFFFFF, inset 1px 1px 10px #373435;
+  background-color: #13A9AF;
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1.1);
+}
+
 footer {
   display: flex;
   flex-direction: row;
