@@ -1,6 +1,6 @@
 <script>
     import Calculadora from "$lib/store/calculadora.js";
-    let contact
+    let contact = "midia"
 
 
 
@@ -30,4 +30,11 @@
     </label>
     <button type="submit">Proximo</button>
 </form>
-<p>{contact}</p>
+{#if contact==="midia"}
+    <div class="description">
+        <p>Agregamos tus redes sociales a tu web-site para que tu cliente pueda encontrarte.</p>
+        <p>Esta opción es simples y la desarrollamos rapidamente.</p>
+    </div>
+{:else if contact==="dataBase"}
+
+{/if}
