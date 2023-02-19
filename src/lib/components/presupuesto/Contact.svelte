@@ -36,5 +36,8 @@
         <p>Esta opción es simples y la desarrollamos rapidamente.</p>
     </div>
 {:else if contact==="dataBase"}
-
+    <div class="description">
+        <p>Necesitas de un formulario de contacto a dentro de tu website?</p>
+        <p>Lo creamos y agregamos una pagina de administración para que puedas acompañarlos.</p>
+    </div>
 {/if}

@@ -74,7 +74,7 @@
     <div class="presupuesto-value">
         <p>La prevision del costo para produccion de tu aplicacion es {initial} USD</p>
         {#if month}
-            <p>Y el valor de manutencion es {month} USD</p>
+            <p>Y el valor de manutencion esta cerca de {month} USD. Siempre es necesario estudar el caso para precificar mejor.</p>
         {/if}
     </div>
     <h3>Tecnologias que vamos utilizar:</h3>
