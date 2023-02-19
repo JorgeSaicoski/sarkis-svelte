@@ -26,32 +26,32 @@
          class:white={dark==="base"}
          class:base={dark==="dark"}
 >
-<h1>Calculadora</h1>
-{#if !$Calculadora.contact && !$Calculadora.login &&  !$Calculadora.consultoria}
-    {#if !$Calculadora.tipo}
-        <Tipo></Tipo>
-    {:else if $Calculadora.tipo === "blog" || $Calculadora.tipo === "catalago" || $Calculadora.tipo === "portfolio"}
-        <Contact></Contact>
-    {:else if $Calculadora.tipo === "ecommerce" }
-        {#if !$Calculadora.eCommerce}
-            <ECommerce></ECommerce>
+    <h1>Calculadora</h1>
+    {#if !$Calculadora.contact && !$Calculadora.login &&  !$Calculadora.consultoria}
+        {#if !$Calculadora.tipo}
+            <Tipo></Tipo>
+        {:else if $Calculadora.tipo === "blog" || $Calculadora.tipo === "catalago" || $Calculadora.tipo === "portfolio"}
+            <Contact></Contact>
+        {:else if $Calculadora.tipo === "ecommerce" }
+            {#if !$Calculadora.eCommerce}
+                <ECommerce></ECommerce>
+            {:else}
+                <Login></Login>
+            {/if}
         {:else}
-            <Login></Login>
+            <Consultoria></Consultoria>
         {/if}
     {:else}
-        <Consultoria></Consultoria>
-    {/if}
-{:else}
-    {#if !$Calculadora.cloud}
-        <Cloud></Cloud>
-    {:else if $Calculadora.cloud === "si"}
-        {#if !$Calculadora.customerTraffic}
-            <Traffic></Traffic>
+        {#if !$Calculadora.cloud}
+            <Cloud></Cloud>
+        {:else if $Calculadora.cloud === "si"}
+            {#if !$Calculadora.customerTraffic}
+                <Traffic></Traffic>
+            {:else}
+                <Final></Final>
+            {/if}
         {:else}
             <Final></Final>
         {/if}
-    {:else}
-        <Final></Final>
     {/if}
-{/if}
 </section>

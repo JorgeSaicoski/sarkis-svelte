@@ -16,7 +16,10 @@
     }
 
 </script>
-<div class="title">
+<div class="title"
+     on:mousemove={handleMousemove}
+     style="  background-size: {(-y/3)+(x/5)}%;"
+>
     <h3>Tenga su aplicacion desarrolada por una equipe especializadad en empreendedorismo.</h3>
     <p>Como el tero, el centinela del pampa, estamos siempre atento a las necesidades de nuestros clientes y a las nuevas tecnologias.</p>
 </div>

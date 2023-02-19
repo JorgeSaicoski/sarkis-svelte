@@ -30,4 +30,6 @@
     </label>
     <button type="submit">Proximo</button>
 </form>
-<p>{customerTraffic}</p>
+<div class="description">
+    <p>Con la cantidad de acesos podremos tener una idea de cuanto va custar para mantener tu website en la internet.</p>
+</div>

@@ -10,7 +10,6 @@
         stacks.push("Django")
         initial = 50
         if ($Calculadora.contact !== "dataBase"){
-            stacks.push("Django")
             obs.push("Con Django la creacion de una area de contacto es muy facil. Aconsejamos que pongas las dos opciones, contacto a dentro del website y por redes sociales.")
         }
     } else if ($Calculadora.tipo === "catalago"){
@@ -33,9 +32,11 @@
         }
         if ($Calculadora.login && $Calculadora.login === "cliente"){
             initial += 30
+            obs.push("La creación de un sistema de login tiene un valor de 30 USD. Este valor posibilita que nuestra equipo creé las reglas especificas de tu aplicacion para tu cliente.")
         }
         if ($Calculadora.login && $Calculadora.login === "completo"){
             initial += 100
+            obs.push("La creación de un sistema de login completo un valor de 100 USD. Este valor posibilita que nuestra equipo creé las reglas especificas de tu aplicacion para tu equipo y cliente.")
         }
     } else{
         if ($Calculadora.consultoria === "app"){
